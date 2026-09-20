@@ -30,7 +30,7 @@
 ## 尚未宣称通过
 
 - Tesseract和Ollama在本机未安装/未实测真实识别；已经实现缺依赖反馈和接口合同测试。它们是可选能力，不是已测的识别准确率。
-- Windows/Linux提供启动脚本和可移植路径；尚未在相应操作系统原生运行验收。
+- [GitHub Actions跨平台检查](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/runs/35488663772)已通过macOS、Linux、Windows核心和JS回归；Linux可选配准与发行包重建也通过。Windows/Linux图形界面尚未人工验收。
 - MCP已做stdio往返和manifest检查；不等同于每个宿主版本都已安装验收。
 - skill有11个有限场景的`scenario_review`，没有独立盲测执行或LLM token日志。改进依据是可执行核心、明确失败边界与文档路由，不虚构跨助手准确率或token收益。
 - 无标定照片仍不能唯一决定真实指数；同参数可重复计算，不保证不同视觉模型会给出相同候选。
