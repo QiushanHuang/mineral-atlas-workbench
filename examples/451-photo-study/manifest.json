@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "dataset_id": "451-photo-study-v1",
+  "title": "Model451: photographic reference example",
+  "shared_by": "QiushanHuang",
+  "publication_authorization": "Explicit user request to publish one formerly private photo set as a public README/example dataset. Only these three photographs are authorized in this change.",
+  "photographer": "not separately identified",
+  "image_processing": "Source JPEG bytes preserved. No crop, mirror, recoloring, or AI alteration. Display framing does not alter originals.",
+  "crystal_system": "三方",
+  "expected_faces": 6,
+  "point_group": "-3m (reference-geometry inference)",
+  "physical_indices_verified": false,
+  "independent_photo_holdout": false,
+  "photos": [
+    {
+      "id": "01",
+      "path": "photos/01.jpg",
+      "sha256": "449d0f731c50b4fdc0f930b676b2328b40653cb0e773ab8721ee0bdcccdd14dc",
+      "bytes": 64261,
+      "image_size": [
+        960,
+        1280
+      ],
+      "exif_fields": [],
+      "role": "fit_and_visual_comparison",
+      "annotation": "annotations/01.json"
+    },
+    {
+      "id": "02",
+      "path": "photos/02.jpg",
+      "sha256": "d904a2d5deb5d6db829df8cbfd6beb1f8bed7463461a58dc8251a4355412c01f",
+      "bytes": 66316,
+      "image_size": [
+        960,
+        1280
+      ],
+      "exif_fields": [],
+      "role": "fit_and_visual_comparison",
+      "annotation": "annotations/02.json"
+    },
+    {
+      "id": "03",
+      "path": "photos/03.jpg",
+      "sha256": "a7a56d83963a621bcb49b480e29a055c314f92fbc8855b8c5d16236ed51939b7",
+      "bytes": 59401,
+      "image_size": [
+        960,
+        1280
+      ],
+      "exif_fields": [],
+      "role": "additional_observation_only",
+      "annotation": null
+    }
+  ],
+  "limitations": [
+    "Reference c/a and face types are assumptions, not measured cell parameters.",
+    "Opposite-face labels F04/F06 retain the earlier provisional correspondence.",
+    "Photo03 is additional visual evidence, not an independently scored validation image."
+  ],
+  "rights_notice": "See DATA_NOTICE.md; publication permission is documented separately from photo authorship and reuse licensing."
+}

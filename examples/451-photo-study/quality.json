@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "errors": [],
+  "vertices": 8,
+  "edges": 12,
+  "faces": 6,
+  "euler": 2,
+  "volume": 10.365492807953476,
+  "max_plane_residual": 3.3306690738754696e-16,
+  "warnings": [],
+  "claim_level": "reference_model",
+  "stats": {
+    "triple_candidates": 8,
+    "plane_count": 6
+  }
+}

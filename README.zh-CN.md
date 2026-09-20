@@ -39,6 +39,27 @@
 
 核心不会把照片发送到远程服务。可选视觉接口只调用用户已安装、运行在`127.0.0.1`上的Ollama，不自动下载模型。
 
+## 实例：451 原图与晶面对照
+
+这是QiushanHuang明确授权公开的一组照片：**三张原图、两张照片的角点标注与相机配准，以及六面三方参考模型**。
+
+| 原始照片 | 同一视角下计算得到的参考模型 |
+|---|---|
+| <img src="examples/451-photo-study/photos/01.jpg" width="280" alt="451原始照片，可见面号1、2、3"> | <img src="examples/451-photo-study/model-preview.svg" width="500" alt="选中F01并显示四指数的451参考模型"> |
+
+照片保持原样，右图由保存的几何和拟合相机计算绘制，展示面号如何对应到可定位的晶面。交互示例还可旋转模型、查看真实共棱拓扑、切换照片、叠加拟合线框，并查看五项报告。
+
+**[查看完整示例数据](examples/451-photo-study/)** · **[下载离线原图示例包](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/download/v1.0.0/mineral-atlas-451-photo-example.zip)**
+
+```bash
+# 使用已保存的配准参数，不需要安装NumPy/SciPy。
+python3 scripts/build_photo_example.py --out atlas-runs/451-photo-study
+```
+
+打开输出的`index.html`，点击“照片视角”和“线框叠加”，再切换照片或输入`F01`定位。安装配准依赖后，加`--refit`可重新拟合；该选项会明确刷新示例的已保存拟合文件。[完整复现说明](examples/451-photo-study/README.md)。
+
+两张照片在960×1280原始坐标下的角点RMSE约为**8.77px、11.99px**。这是拟合误差，不是独立精度验收；第三张仅作补充观察，参考轴比与暂配的相反面编号仍保留说明。[原图来源与公开范围](examples/451-photo-study/DATA_NOTICE.md)。
+
 ## 功能特性
 
 - 晶体旋转、稳定缩放、点选面、晶轴显示与平行相反面定位

@@ -18,4 +18,4 @@ OpenAI Codex用于辅助实现、测试、文档与打包；logo使用图像生�
 
 IUCr references support the documented index and symmetry conventions. Optional integrations use NumPy, SciPy, Pillow, Tesseract, and Ollama. Their projects retain their own authorship and licenses. See [algorithm references](docs/ALGORITHMS.md) and [axis conventions](skills/mineral-face-atlas/references/crystallography.md).
 
-References do not imply endorsement. Private source photographs are not distributed with this repository or the generic release archives.
+References do not imply endorsement. The only source-photo set authorized for public distribution is [the451 example](examples/451-photo-study/). QiushanHuang provided the publication authorization; no separate photographer identity is inferred. Other private source photographs remain excluded.

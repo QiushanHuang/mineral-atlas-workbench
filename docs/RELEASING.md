@@ -18,7 +18,7 @@ Release outputs:
 - `mineral-face-atlas-skill-2.0.0.zip`
 - `release-checksums.json`
 
-The software archive is also the plugin bundle. The skill archive includes a standalone runtime. Both include the project license, author information, documentation, and logo. Private photographs, local interpreter preferences, caches, and development task notes are excluded.
+The software archive is also the plugin bundle. The skill archive includes a standalone runtime. Both include the project license, author information, documentation, and logo. The explicitly authorized451 photographic example is included through examples/. All other private photographs, local interpreter preferences, caches, and development task notes remain excluded.
 
 ## Version And Publication
 

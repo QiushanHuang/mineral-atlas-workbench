@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "451",
+  "title": "六面菱面体",
+  "crystal_system": "三方",
+  "point_group": "-3m",
+  "index_count": 4,
+  "basis": [
+    [
+      -0.5,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      2.44
+    ],
+    [
+      0.8660254037844386,
+      0.0,
+      0.0
+    ]
+  ],
+  "expected_faces": 6,
+  "faces": [
+    {
+      "id": "F01",
+      "hkl": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 1 · 菱面体面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "1"
+    },
+    {
+      "id": "F02",
+      "hkl": [
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 2 · 菱面体面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "2"
+    },
+    {
+      "id": "F03",
+      "hkl": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 3 · 菱面体面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "3"
+    },
+    {
+      "id": "F04",
+      "hkl": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 4 · 菱面体相反面",
+      "evidence": "按照片相邻关系及中心对称暂配；1/4与3/6对应仍需实物翻转核对",
+      "photo_label": "4"
+    },
+    {
+      "id": "F05",
+      "hkl": [
+        -1,
+        1,
+        0,
+        1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 5 · 菱面体相反面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "5"
+    },
+    {
+      "id": "F06",
+      "hkl": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "distance": 1.0,
+      "expand": false,
+      "label": "原图 6 · 菱面体相反面",
+      "evidence": "按照片相邻关系及中心对称暂配；1/4与3/6对应仍需实物翻转核对",
+      "photo_label": "6"
+    }
+  ],
+  "metadata": {
+    "symmetry": "L³ 3L² 3PC",
+    "axis_choice": "以通过3、4、5会合顶点的 L³ 为 +c；三个基面 L² 方向取 a₁、a₂、a₃。",
+    "basis_note": "参考 a:c=1:2.44，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+    "mineral_name": "",
+    "description": "六个菱形面围合；三次轴通过三面会合的两个对顶点。",
+    "notes": [
+      "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+      "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+      "照片和模型并列核对；只有已配准照片提供线框。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "reference_model",
+      "source": "既有十五组模型的参考参数；照片不随通用包分发",
+      "status": "assumed"
+    },
+    {
+      "type": "publication_permission",
+      "status": "confirmed",
+      "source": "QiushanHuang explicitly authorized publishing one photographic example set; model451 selected."
+    }
+  ]
+}

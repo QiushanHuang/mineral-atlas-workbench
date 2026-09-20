@@ -37,4 +37,4 @@
 
 ## 可复核材料
 
-发行包中的`verification/benchmark.json`、`fit-benchmark.json`、`skill-scenarios.json`保留原始量化值与限制。测试代码与合成图像/标注一起提供。私人照片与开发缓存不进入通用发行包。
+发行包中的`verification/benchmark.json`、`fit-benchmark.json`、`skill-scenarios.json`保留原始量化值与限制。测试代码与合成图像/标注一起提供。本次新增明确授权公开的451照片例子，包含原始字节校验和保存拟合的重投影校验；其他私人照片与开发缓存仍不进入发行包。

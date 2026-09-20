@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "face_id": "F01",
+  "image_size": [
+    960,
+    1280
+  ],
+  "mode": "cyclic",
+  "points": [
+    [
+      130,
+      717
+    ],
+    [
+      342,
+      625
+    ],
+    [
+      500,
+      809
+    ],
+    [
+      243,
+      901
+    ]
+  ],
+  "silhouette": [
+    [
+      130,
+      717
+    ],
+    [
+      342,
+      625
+    ],
+    [
+      567,
+      705
+    ],
+    [
+      751,
+      879
+    ],
+    [
+      496,
+      954
+    ],
+    [
+      243,
+      901
+    ]
+  ],
+  "face_centers": {
+    "F03": [
+      499,
+      887
+    ],
+    "F05": [
+      542,
+      746
+    ]
+  },
+  "loss": "linear",
+  "mirror": "not_assumed",
+  "holdout": [],
+  "evidence": "Manual visible-face corners and silhouette; face centers are low-weight pose constraints. No independent holdout coordinates."
+}

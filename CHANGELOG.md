@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — Authorized Photo Example
+
+- Publish the explicitly authorized451 set: three unchanged photographs, two original-pixel annotations, saved camera fits, and reference geometry.
+- Add a computed face-index figure to both README language sections, preserving same-page language navigation.
+- Add a standard-library saved-fit exporter and dataset integrity/reprojection tests.
+- Provide a separate downloadable photo-example bundle; the original v1.0.0 software and skill assets remain unchanged.
+
 ## 1.0.0 — First Public Release
 
 - Offline browser workbench, CLI, and seven stdio MCP tools sharing one core.
