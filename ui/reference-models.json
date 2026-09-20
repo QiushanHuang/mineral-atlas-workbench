@@ -625,6 +625,12 @@
         83.16939426063179
       ],
       "symmetry": "C",
+      "symmetryElements": {
+        "order": 2,
+        "mirrors": 0,
+        "inversion": true
+      },
+      "pointGroupDisplay": "1̅",
       "pointGroup": "-1",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "沿三组独立棱向选 a、b、c；三轴斜交，采用右手序。",
@@ -2195,6 +2201,12 @@
         90.0
       ],
       "symmetry": "L² 2P",
+      "symmetryElements": {
+        "order": 4,
+        "mirrors": 2,
+        "inversion": false
+      },
+      "pointGroupDisplay": "mm2",
       "pointGroup": "mm2",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "唯一 L² 取 c；两个镜面相交于 c，a、b 分别取垂直于另一镜面的方向；a⊥b⊥c。",
@@ -3281,6 +3293,12 @@
         90.0
       ],
       "symmetry": "L⁴ 4P",
+      "symmetryElements": {
+        "order": 8,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "pointGroupDisplay": "4mm",
       "pointGroup": "4mm",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "L⁴ 取 c；a、b 在垂直 c 的平面内，沿两条相互垂直的等价方向取轴。",
@@ -5084,6 +5102,12 @@
         90.0
       ],
       "symmetry": "3L² 4L³ 3PC",
+      "symmetryElements": {
+        "order": 24,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "pointGroupDisplay": "m3̅",
       "pointGroup": "m-3",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "三条互相垂直的 L² 取 a、b、c，构成右手系。",
@@ -7980,6 +8004,12 @@
         90.0
       ],
       "symmetry": "L⁴ 4L² 5PC",
+      "symmetryElements": {
+        "order": 16,
+        "mirrors": 5,
+        "inversion": true
+      },
+      "pointGroupDisplay": "4/mmm",
       "pointGroup": "4/mmm",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "L⁴ 取 c；垂直 c 的四条 L² 中，取互相垂直的一对作为 a、b。",
@@ -13392,6 +13422,12 @@
         90.0
       ],
       "symmetry": "3L⁴ 4L³ 6L² 9PC",
+      "symmetryElements": {
+        "order": 48,
+        "mirrors": 9,
+        "inversion": true
+      },
+      "pointGroupDisplay": "m3̅m",
       "pointGroup": "m-3m",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "三条互相垂直的 L⁴ 取 a、b、c，构成右手系。",
@@ -15945,6 +15981,12 @@
         90.0
       ],
       "symmetry": "3L⁴ 4L³ 6L² 9PC",
+      "symmetryElements": {
+        "order": 48,
+        "mirrors": 9,
+        "inversion": true
+      },
+      "pointGroupDisplay": "m3̅m",
       "pointGroup": "m-3m",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "三条互相垂直的 L⁴ 取 a、b、c，构成右手系。",
@@ -18928,6 +18970,12 @@
         90.0
       ],
       "symmetry": "3L² 3PC",
+      "symmetryElements": {
+        "order": 8,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "pointGroupDisplay": "mmm",
       "pointGroup": "mmm",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "三条互相垂直的 L² 作为 a、b、c；本页 c 沿长方向，a 沿宽方向，b 沿厚方向。",
@@ -19678,6 +19726,12 @@
         90.0
       ],
       "symmetry": "P",
+      "symmetryElements": {
+        "order": 2,
+        "mirrors": 1,
+        "inversion": false
+      },
+      "pointGroupDisplay": "m",
       "pointGroup": "m",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "b 取唯一镜面 P 的法线；c 沿显著长棱，a 在镜面内按参考基底补定（缺少独立棱向标定）；安置为 c 直立、b 左右水平、a 朝前下倾。",
@@ -21370,6 +21424,12 @@
         120.00000000000001
       ],
       "symmetry": "L³ 3P",
+      "symmetryElements": {
+        "order": 6,
+        "mirrors": 3,
+        "inversion": false
+      },
+      "pointGroupDisplay": "3m",
       "pointGroup": "3m",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以唯一 L³ 为 c，+c 指向1、2、3相交的尖端；基面内沿三个等价方向取 a₁、a₂、a₃。",
@@ -22270,6 +22330,12 @@
         120.00000000000001
       ],
       "symmetry": "L³ 3L² 3PC",
+      "symmetryElements": {
+        "order": 12,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "pointGroupDisplay": "3̅m",
       "pointGroup": "-3m",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以通过3、4、5会合顶点的 L³ 为 +c；三个基面 L² 方向取 a₁、a₂、a₃。",
@@ -25140,6 +25206,12 @@
         120.00000000000001
       ],
       "symmetry": "L⁶ 6L² 7PC",
+      "symmetryElements": {
+        "order": 24,
+        "mirrors": 7,
+        "inversion": true
+      },
+      "pointGroupDisplay": "6/mmm",
       "pointGroup": "6/mmm",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以两端底面19、20的中心连线为 c，+c 指向20；三个等价基面方向取 a₁、a₂、a₃。",
@@ -28062,6 +28134,12 @@
         120.00000000000001
       ],
       "symmetry": "L⁶ 6L² 7PC",
+      "symmetryElements": {
+        "order": 24,
+        "mirrors": 7,
+        "inversion": true
+      },
+      "pointGroupDisplay": "6/mmm",
       "pointGroup": "6/mmm",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以六次轴 L⁶ 为 c，+c 指向底面19；基面内三个等价方向取 a₁、a₂、a₃。",
@@ -29037,7 +29115,13 @@
         90.0,
         120.00000000000001
       ],
-      "symmetry": "Lᵢ⁶ 3L² 4P",
+      "symmetry": "Lᵢ⁶ 3L² 3P",
+      "symmetryElements": {
+        "order": 12,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "pointGroupDisplay": "6̅m2",
       "pointGroup": "-6m2",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以三角形两底面中心连线上的六次反轴为 c，+c 指向1；基面内沿三个竖直镜面的法线取 a₁、a₂、a₃（L² 位于相邻基轴之间）。",
@@ -30103,7 +30187,13 @@
         90.0,
         120.00000000000001
       ],
-      "symmetry": "Lᵢ⁶ 3L² 4P",
+      "symmetry": "Lᵢ⁶ 3L² 3P",
+      "symmetryElements": {
+        "order": 12,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "pointGroupDisplay": "6̅m2",
       "pointGroup": "-6m2",
       "status": "参考模型参数；实物证据另行核对",
       "axisChoice": "以两截尖三角形中心连线上的六次反轴为 c，+c 指向1；基面内沿三个竖直镜面的法线取 a₁、a₂、a₃（L² 位于相邻基轴之间）。",

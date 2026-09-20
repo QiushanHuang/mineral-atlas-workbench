@@ -1,0 +1,385 @@
+{
+  "version": "2026-09-20",
+  "scope": "32种三维非磁晶体学点群；不含空间群、磁点群或非晶体学点群",
+  "notation": "Traditional textbook shorthand and actual element counts are listed separately. ASCII minus denotes an overbar on the following digit.",
+  "sources": [
+    {
+      "title": "IUCr 教学资料 Table 2：32 point groups",
+      "url": "https://www.iucr.org/what-we-do/education/pamphlets/introduction-crystal-physics"
+    },
+    {
+      "title": "International Tables：point groups and crystal classes",
+      "url": "https://onlinelibrary.wiley.com/iucr/itc/Ac/ch3o2v0001/"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "display": "1",
+      "crystalSystem": "三斜",
+      "schoenflies": "C1",
+      "textbook": "L¹",
+      "order": 1,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-1",
+      "display": "1̅",
+      "crystalSystem": "三斜",
+      "schoenflies": "Ci",
+      "textbook": "C",
+      "order": 2,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "2",
+      "display": "2",
+      "crystalSystem": "单斜",
+      "schoenflies": "C2",
+      "textbook": "L²",
+      "order": 2,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "m",
+      "display": "m",
+      "crystalSystem": "单斜",
+      "schoenflies": "Cs",
+      "textbook": "P",
+      "order": 2,
+      "mirrorCount": 1,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "2/m",
+      "display": "2/m",
+      "crystalSystem": "单斜",
+      "schoenflies": "C2h",
+      "textbook": "L² PC",
+      "order": 4,
+      "mirrorCount": 1,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "222",
+      "display": "222",
+      "crystalSystem": "正交",
+      "schoenflies": "D2",
+      "textbook": "3L²",
+      "order": 4,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "mm2",
+      "display": "mm2",
+      "crystalSystem": "正交",
+      "schoenflies": "C2v",
+      "textbook": "L² 2P",
+      "order": 4,
+      "mirrorCount": 2,
+      "aliases": [
+        "2mm",
+        "m2m"
+      ],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "mmm",
+      "display": "mmm",
+      "crystalSystem": "正交",
+      "schoenflies": "D2h",
+      "textbook": "3L² 3PC",
+      "order": 8,
+      "mirrorCount": 3,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "4",
+      "display": "4",
+      "crystalSystem": "四方",
+      "schoenflies": "C4",
+      "textbook": "L⁴",
+      "order": 4,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-4",
+      "display": "4̅",
+      "crystalSystem": "四方",
+      "schoenflies": "S4",
+      "textbook": "Lᵢ⁴",
+      "order": 4,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "4/m",
+      "display": "4/m",
+      "crystalSystem": "四方",
+      "schoenflies": "C4h",
+      "textbook": "L⁴ PC",
+      "order": 8,
+      "mirrorCount": 1,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "422",
+      "display": "422",
+      "crystalSystem": "四方",
+      "schoenflies": "D4",
+      "textbook": "L⁴ 4L²",
+      "order": 8,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "4mm",
+      "display": "4mm",
+      "crystalSystem": "四方",
+      "schoenflies": "C4v",
+      "textbook": "L⁴ 4P",
+      "order": 8,
+      "mirrorCount": 4,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-42m",
+      "display": "4̅2m",
+      "crystalSystem": "四方",
+      "schoenflies": "D2d",
+      "textbook": "Lᵢ⁴ 2L² 2P",
+      "order": 8,
+      "mirrorCount": 2,
+      "aliases": [
+        "-4m2"
+      ],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "4/mmm",
+      "display": "4/mmm",
+      "crystalSystem": "四方",
+      "schoenflies": "D4h",
+      "textbook": "L⁴ 4L² 5PC",
+      "order": 16,
+      "mirrorCount": 5,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "3",
+      "display": "3",
+      "crystalSystem": "三方",
+      "schoenflies": "C3",
+      "textbook": "L³",
+      "order": 3,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-3",
+      "display": "3̅",
+      "crystalSystem": "三方",
+      "schoenflies": "C3i (S6)",
+      "textbook": "L³ C",
+      "order": 6,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "S6 是 Schoenflies 符号，不是晶体学的六次反轴 Lᵢ⁶；此类为三方。"
+    },
+    {
+      "id": "32",
+      "display": "32",
+      "crystalSystem": "三方",
+      "schoenflies": "D3",
+      "textbook": "L³ 3L²",
+      "order": 6,
+      "mirrorCount": 0,
+      "aliases": [
+        "321",
+        "312"
+      ],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "3m",
+      "display": "3m",
+      "crystalSystem": "三方",
+      "schoenflies": "C3v",
+      "textbook": "L³ 3P",
+      "order": 6,
+      "mirrorCount": 3,
+      "aliases": [
+        "3m1",
+        "31m"
+      ],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-3m",
+      "display": "3̅m",
+      "crystalSystem": "三方",
+      "schoenflies": "D3d",
+      "textbook": "L³ 3L² 3PC",
+      "order": 12,
+      "mirrorCount": 3,
+      "aliases": [
+        "-3m1",
+        "-31m"
+      ],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "6",
+      "display": "6",
+      "crystalSystem": "六方",
+      "schoenflies": "C6",
+      "textbook": "L⁶",
+      "order": 6,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-6",
+      "display": "6̅",
+      "crystalSystem": "六方",
+      "schoenflies": "C3h",
+      "textbook": "Lᵢ⁶",
+      "order": 6,
+      "mirrorCount": 1,
+      "aliases": [],
+      "note": "Lᵢ⁶ 的三次作用等于水平镜面；简式不重复列该镜面，实际镜面总数比显式P数多1。"
+    },
+    {
+      "id": "6/m",
+      "display": "6/m",
+      "crystalSystem": "六方",
+      "schoenflies": "C6h",
+      "textbook": "L⁶ PC",
+      "order": 12,
+      "mirrorCount": 1,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "622",
+      "display": "622",
+      "crystalSystem": "六方",
+      "schoenflies": "D6",
+      "textbook": "L⁶ 6L²",
+      "order": 12,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "6mm",
+      "display": "6mm",
+      "crystalSystem": "六方",
+      "schoenflies": "C6v",
+      "textbook": "L⁶ 6P",
+      "order": 12,
+      "mirrorCount": 6,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-6m2",
+      "display": "6̅m2",
+      "crystalSystem": "六方",
+      "schoenflies": "D3h",
+      "textbook": "Lᵢ⁶ 3L² 3P",
+      "order": 12,
+      "mirrorCount": 4,
+      "aliases": [
+        "-62m"
+      ],
+      "note": "Lᵢ⁶ 的三次作用等于水平镜面；简式不重复列该镜面，实际镜面总数比显式P数多1。"
+    },
+    {
+      "id": "6/mmm",
+      "display": "6/mmm",
+      "crystalSystem": "六方",
+      "schoenflies": "D6h",
+      "textbook": "L⁶ 6L² 7PC",
+      "order": 24,
+      "mirrorCount": 7,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "23",
+      "display": "23",
+      "crystalSystem": "等轴",
+      "schoenflies": "T",
+      "textbook": "3L² 4L³",
+      "order": 12,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "m-3",
+      "display": "m3̅",
+      "crystalSystem": "等轴",
+      "schoenflies": "Th",
+      "textbook": "3L² 4L³ 3PC",
+      "order": 24,
+      "mirrorCount": 3,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "432",
+      "display": "432",
+      "crystalSystem": "等轴",
+      "schoenflies": "O",
+      "textbook": "3L⁴ 4L³ 6L²",
+      "order": 24,
+      "mirrorCount": 0,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "-43m",
+      "display": "4̅3m",
+      "crystalSystem": "等轴",
+      "schoenflies": "Td",
+      "textbook": "3Lᵢ⁴ 4L³ 6P",
+      "order": 24,
+      "mirrorCount": 6,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    },
+    {
+      "id": "m-3m",
+      "display": "m3̅m",
+      "crystalSystem": "等轴",
+      "schoenflies": "Oh",
+      "textbook": "3L⁴ 4L³ 6L² 9PC",
+      "order": 48,
+      "mirrorCount": 9,
+      "aliases": [],
+      "note": "同一高次轴所包含的低次转动不另计为另一条轴。"
+    }
+  ]
+}

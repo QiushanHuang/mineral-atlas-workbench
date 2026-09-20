@@ -65,6 +65,7 @@ The two fits have approximately **8.77px** and **11.99px** corner RMSE at960×12
 - Interactive crystal rotation, stable zoom, face selection, crystal axes, and opposite-face lookup
 - Three-index `(h k l)` and four-index `(h k i l)` parsing, including negative and overbar notation
 - Reference symmetry operations for the 32 crystallographic point-group classes
+- [Offline 32-class standard and correction workflow](docs/point-group-audit.md): textbook shorthand, actual mirror counts, complete operation-set validation, and a reference table in every report
 - Half-space construction from a direct basis, face indices, and support distances
 - Real shared-edge adjacency, linked to the spatial model and face table
 - Checks for incompatible bases, duplicate directions, missing closure, inactive faces, face-count conflicts, and invalid topology

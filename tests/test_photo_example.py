@@ -17,5 +17,5 @@ class PhotoExample(unittest.TestCase):
   with tempfile.TemporaryDirectory() as tmp:
    subprocess.run([sys.executable,str(ROOT/'scripts/build_photo_example.py'),'--out',tmp],check=True,stdout=subprocess.DEVNULL)
    out=pathlib.Path(tmp);data=json.loads((out/'data.js').read_text(encoding='utf-8').removeprefix('const DATA = ').rstrip(';\n'))
-   self.assertEqual(len(data['photos']['451']),3);self.assertEqual([v['photo'] for v in data['views']['451']],[1,2]);self.assertTrue((out/'DATA_NOTICE.md').is_file());self.assertTrue((out/'index.html').is_file())
+   self.assertEqual(len(data['photos']['451']),3);self.assertEqual([v['photo'] for v in data['views']['451']],[1,2]);self.assertTrue((out/'DATA_NOTICE.md').is_file());self.assertTrue((out/'index.html').is_file());self.assertTrue((out/'point-groups.html').is_file());self.assertEqual(json.loads((out/'model.json').read_text(encoding='utf-8')),data['models']['451'])
 if __name__=='__main__':unittest.main()

@@ -1,5 +1,6 @@
 """Reference-basis indices and bounded half-space geometry; Python standard library only."""
 import math, itertools, re
+from .point_groups import GROUPS, elements
 from fractions import Fraction
 from functools import lru_cache
 I=[[1.,0,0],[0,1.,0],[0,0,1.]]
@@ -169,6 +170,14 @@ def validate(model,check_symmetry=True):
  if len(V)-len(edges)+len(F)!=2:errors.append('Euler关系不满足V−E+F=2')
  if volume<=tol**3:errors.append('体积非正或模型退化')
  if check_symmetry:
+  x=model.get('indexing',{});pg=x.get('pointGroup');g=GROUPS.get(pg)
+  if g is None:errors.append('点群不在32类标准中')
+  else:
+   if model.get('crystalSystem')!=g['crystalSystem']:errors.append('晶系与32类标准不一致')
+   if str(x.get('symmetry','')).replace(' ','')!=g['textbook'].replace(' ',''):errors.append('对称型简式与32类标准不一致')
+   expected={keymat(T) for T in operations(pg,A)} if A else set()
+   stored=[keymat(T) for T in x.get('operations',[])]
+   if len(stored)!=g['order'] or set(stored)!=expected:errors.append('操作集不完整或与所列点群及轴系不一致')
   for T in model.get('indexing',{}).get('operations',[]):
    if any(min(norm(sub(mv(T,v),q)) for q in V)>tol for v in V):errors.append('声明的点群并不保持当前模型；需调整面距或对称型');break
  return {'ok':not errors,'errors':errors,'vertices':len(V),'edges':len(edges),'faces':len(F),'euler':len(V)-len(edges)+len(F),'volume':volume,'max_plane_residual':max_residual}
@@ -207,7 +216,10 @@ def build(spec):
   if i in done:continue
   orb={tuple(h) for h in f['formOrbit']};members=[j for j,g in enumerate(model['faces']) if tuple(g['modelMiller']) in orb];done.update(members);forms.append({'representative':list(max(orb)),'faces':members,'faceIds':[model['faces'][j]['id'] for j in members]})
  meta=spec.get('metadata',{});choice=str(meta.get('axis_choice','c沿主轴；其余独立轴及正向由所列基矩阵明确。单斜唯一轴为b。'))
- info={'indexCount':count,'basis':A,'basisInverseTranspose':inv(tr(A)),'lengths':lens,'angles':angles,'symmetry':str(meta.get('symmetry',pg)),'pointGroup':pg,'status':'参考模型参数；实物证据另行核对','axisChoice':choice,'geometricFeatures':FEATURES[system],'basisNote':str(meta.get('basis_note','轴比与面距是参考模型参数，未自动解释为实物标定。')),'axisConvention':'A的列为'+('a₁、a₂、c；a₃=−a₁−a₂。' if count==4 else 'a、b、c。')+'使用右手基底。','standardRotation':R,'standardPlacement':'c直立，第二独立基轴向右；晶轴随模型旋转，箭头长度只表示方向。','projectionNote':'沿用固定缩放的斜投影/自由正交投影，照片采用明确相机模型。','operations':ops,'forms':forms,'formula':'n ∝ A⁻ᵀ(h,k,l)；四轴另补i=−h−k。'}
+ info={'indexCount':count,'basis':A,'basisInverseTranspose':inv(tr(A)),'lengths':lens,'angles':angles,'symmetry':GROUPS[pg]['textbook'],'symmetryElements':elements(ops),'pointGroupDisplay':GROUPS[pg]['display'],'pointGroup':pg,'status':'参考模型参数；实物证据另行核对','axisChoice':choice,'geometricFeatures':FEATURES[system],'basisNote':str(meta.get('basis_note','轴比与面距是参考模型参数，未自动解释为实物标定。')),'axisConvention':'A的列为'+('a₁、a₂、c；a₃=−a₁−a₂。' if count==4 else 'a、b、c。')+'使用右手基底。','standardRotation':R,'standardPlacement':'c直立，第二独立基轴向右；晶轴随模型旋转，箭头长度只表示方向。','projectionNote':'沿用固定缩放的斜投影/自由正交投影，照片采用明确相机模型。','operations':ops,'forms':forms,'formula':'n ∝ A⁻ᵀ(h,k,l)；四轴另补i=−h−k。'}
+ supplied=meta.get('symmetry')
+ if supplied is not None and str(supplied).replace(' ','')!=GROUPS[pg]['textbook'].replace(' ',''):
+  info['originalSymmetry']=str(supplied);warnings.append('输入的对称型文字与32类标准不一致；原文保存在originalSymmetry，显示采用标准教材简式')
  if count==4:
   a,b,c=tr(A);info.update(displayAxes=[a,b,[-x-y for x,y in zip(a,b)],c],axisLabels=['a₁','a₂','a₃','c'])
  model.update(indexing=info,crystalSystem=system,mineralName=str(meta.get('mineral_name','')),geometryStatus='参考参数构形；非原子结构',info={'system':system,'title':str(spec.get('title',name)),'desc':str(meta.get('description','由参考基底、晶面方向与支持距离生成凸多面体。')),'notes':[str(x) for x in meta.get('notes',[])]+['原始输入、算法版本与质量校验随输出保存。'],'limits':'照片可辅助定向，不能独立唯一确定晶胞参数、晶面指数或矿物种属。'},claimLevel='reference_model')

@@ -2,7 +2,9 @@
 import sys,pathlib,json,html,shutil
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
 from atlas.core import build
+from atlas.point_groups import reference_page
 from atlas.project import ROOT,write_json,report,source_hash
+(ROOT/'ui/point-groups.html').write_text(reference_page().replace('href="index.html"','href="reference-atlas.html"'),encoding='utf-8')
 shutil.copyfile(ROOT/'assets/logo.png',ROOT/'ui/logo.png')
 specs=json.loads((ROOT/'examples/reference-atlas.json').read_text(encoding="utf-8"));models={};qualities={};reports=[]
 for s in specs:
@@ -13,3 +15,11 @@ for a,b in [('report.html','reference-report.html'),('input.json','reference-inp
 for n,x in [('inputs',specs),('models',models),('quality',qualities),('receipt',{'source_sha256':source_hash(),'model_count':15,'face_count':226,'claim_level':'reference_model','photos_included':False})]:write_json(ROOT/f'ui/reference-{n}.json',x)
 (ROOT/'查看预置图谱.html').write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=ui/reference-atlas.html"><a href="ui/reference-atlas.html">打开十五组参考图谱（无需Python或网络）</a>', encoding="utf-8")
 print('Built offline reference atlas: 15 models / 226 faces; no private photos')
+# Keep the full standard readable directly on GitHub as well as in offline HTML.
+from atlas.point_groups import CATALOGUE
+headers=['晶系','国际符号','Schoenflies','教材简式','操作数','实际镜面数','其他设置']
+md='# 32种晶体学点群对照标准\n\n由 `atlas/point-groups-32.json` 生成；教材简式和实际镜面数分别列出。−6m2简式为Lᵢ⁶ 3L² 3P，水平镜面隐含于六次反轴，实际共4个镜面。面数不等于操作数。其他设置不增加新点群类型，变换设置时须同步变换晶轴和晶面指数。\n\n|'+'|'.join(headers)+'|\n|'+'|'.join(['---']*len(headers))+'|\n'
+for g in CATALOGUE['groups']:
+ md+='|'+'|'.join(str(v) for v in [g['crystalSystem'],g['display'],g['schoenflies'],g['textbook'],g['order'],g['mirrorCount'],', '.join(g['aliases']) or '—'])+'|\n'
+md+='\n来源：[IUCr Table 2](https://www.iucr.org/what-we-do/education/pamphlets/introduction-crystal-physics)、[International Tables](https://onlinelibrary.wiley.com/iucr/itc/Ac/ch3o2v0001/)。[本次修正与核对环节](point-group-audit.md)。\n'
+(ROOT/'docs/point-groups-32.md').write_text(md,encoding='utf-8')

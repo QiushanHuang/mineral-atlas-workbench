@@ -286,3 +286,7 @@ python3 scripts/verify_release.py dist
 [MIT](LICENSE)。Copyright © 2026 QiushanHuang。
 
 [简体中文](#简体中文) · [English](README.md#english)
+
+## 32类对照与修正流程
+
+[复核说明](docs/point-group-audit.md)记录六组案例的对称型、32类对照标准及可重复核对步骤。671、675统一使用教材简式Lᵢ⁶ 3L² 3P，实际镜面数4另列。完整32类表随报告、离线结果包和技能运行时提供，几何自洽仍不替代实物测定。

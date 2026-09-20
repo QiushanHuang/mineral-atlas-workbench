@@ -2,6 +2,7 @@
 import argparse,pathlib,json,sys,shutil,html,hashlib,platform
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]))
 from atlas.core import build
+from atlas.point_groups import CATALOGUE,reference_page
 from atlas.project import ROOT,write_json,report,source_hash
 p=argparse.ArgumentParser();p.add_argument('--refit',action='store_true');p.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs/451-photo-study'));a=p.parse_args()
 d=ROOT/'examples/451-photo-study';spec=json.loads((d/'project.json').read_text(encoding='utf-8'));manifest=json.loads((d/'manifest.json').read_text(encoding='utf-8'));m,q=build(spec);views=[];photos=[];fit_qualities={}
@@ -35,6 +36,8 @@ for name in ['photos','annotations','fits']:shutil.copytree(d/name,out/name,dirs
 for name in ['project.json','manifest.json','model.json','quality.json','README.md','DATA_NOTICE.md','model-preview.svg']:shutil.copy2(d/name,out/name)
 shutil.copy2(d/'project.json',out/'input.json');shutil.copy2(ROOT/'assets/logo.png',out/'logo.png');shutil.copy2(ROOT/'LICENSE',out/'LICENSE')
 for src,dst in [('viewer.html','index.html'),('viewer.js','viewer.js'),('style.css','style.css')]:shutil.copy2(ROOT/'templates'/src,out/dst)
+write_json(out/'model.json',m);write_json(out/'quality.json',q);write_json(out/'point-groups-32.json',CATALOGUE)
+(out/'point-groups.html').write_text(reference_page(),encoding='utf-8')
 data={'models':{'451':m},'views':{'451':views},'photos':{'451':photos}};(out/'data.js').write_text('const DATA = '+json.dumps(data,ensure_ascii=False).replace('<','\\u003c')+';\n',encoding='utf-8');(out/'report.html').write_text(report(m,q,spec),encoding='utf-8')
 write_json(out/'receipt.json',{'dataset':manifest['dataset_id'],'source_sha256':source_hash(),'photographs':manifest['photos'],'fit_quality':fit_qualities,'claim_level':'reference_model','fit_mode':'freshly_refit' if a.refit else 'saved_fit_replay'})
 print(json.dumps({'output':str(out),'faces':len(m['faces']),'photos':len(photos),'fitted_photos':len(views),'rmse_pixels':{k:v['rmse_pixels'] for k,v in fit_qualities.items()}},ensure_ascii=False,indent=2))

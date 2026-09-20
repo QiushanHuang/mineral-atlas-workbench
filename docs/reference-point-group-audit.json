@@ -1,0 +1,245 @@
+{
+  "scope": "15 reference models, independently enumerated geometric operations",
+  "results": [
+    {
+      "id": "128",
+      "faces": 8,
+      "crystal_system": "三斜",
+      "declared": "-1",
+      "geometry_group": "-1",
+      "textbook": "C",
+      "elements": {
+        "order": 2,
+        "mirrors": 0,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "333",
+      "faces": 17,
+      "crystal_system": "正交",
+      "declared": "mm2",
+      "geometry_group": "mm2",
+      "textbook": "L² 2P",
+      "elements": {
+        "order": 4,
+        "mirrors": 2,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "511",
+      "faces": 10,
+      "crystal_system": "四方",
+      "declared": "4mm",
+      "geometry_group": "4mm",
+      "textbook": "L⁴ 4P",
+      "elements": {
+        "order": 8,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "722",
+      "faces": 12,
+      "crystal_system": "等轴",
+      "declared": "m-3",
+      "geometry_group": "m-3",
+      "textbook": "3L² 4L³ 3PC",
+      "elements": {
+        "order": 24,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "5518",
+      "faces": 26,
+      "crystal_system": "四方",
+      "declared": "4/mmm",
+      "geometry_group": "4/mmm",
+      "textbook": "L⁴ 4L² 5PC",
+      "elements": {
+        "order": 16,
+        "mirrors": 5,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "7518",
+      "faces": 32,
+      "crystal_system": "等轴",
+      "declared": "m-3m",
+      "geometry_group": "m-3m",
+      "textbook": "3L⁴ 4L³ 6L² 9PC",
+      "elements": {
+        "order": 48,
+        "mirrors": 9,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "758",
+      "faces": 14,
+      "crystal_system": "等轴",
+      "declared": "m-3m",
+      "geometry_group": "m-3m",
+      "textbook": "3L⁴ 4L³ 6L² 9PC",
+      "elements": {
+        "order": 48,
+        "mirrors": 9,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "3519",
+      "faces": 26,
+      "crystal_system": "正交",
+      "declared": "mmm",
+      "geometry_group": "mmm",
+      "textbook": "3L² 3PC",
+      "elements": {
+        "order": 8,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "2522",
+      "faces": 6,
+      "crystal_system": "单斜",
+      "declared": "m",
+      "geometry_group": "m",
+      "textbook": "P",
+      "elements": {
+        "order": 2,
+        "mirrors": 1,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "439",
+      "faces": 16,
+      "crystal_system": "三方",
+      "declared": "3m",
+      "geometry_group": "3m",
+      "textbook": "L³ 3P",
+      "elements": {
+        "order": 6,
+        "mirrors": 3,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "451",
+      "faces": 6,
+      "crystal_system": "三方",
+      "declared": "-3m",
+      "geometry_group": "-3m",
+      "textbook": "L³ 3L² 3PC",
+      "elements": {
+        "order": 12,
+        "mirrors": 3,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "611",
+      "faces": 20,
+      "crystal_system": "六方",
+      "declared": "6/mmm",
+      "geometry_group": "6/mmm",
+      "textbook": "L⁶ 6L² 7PC",
+      "elements": {
+        "order": 24,
+        "mirrors": 7,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "6512",
+      "faces": 20,
+      "crystal_system": "六方",
+      "declared": "6/mmm",
+      "geometry_group": "6/mmm",
+      "textbook": "L⁶ 6L² 7PC",
+      "elements": {
+        "order": 24,
+        "mirrors": 7,
+        "inversion": true
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "671",
+      "faces": 5,
+      "crystal_system": "六方",
+      "declared": "-6m2",
+      "geometry_group": "-6m2",
+      "textbook": "Lᵢ⁶ 3L² 3P",
+      "elements": {
+        "order": 12,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    },
+    {
+      "id": "675",
+      "faces": 8,
+      "crystal_system": "六方",
+      "declared": "-6m2",
+      "geometry_group": "-6m2",
+      "textbook": "Lᵢ⁶ 3L² 3P",
+      "elements": {
+        "order": 12,
+        "mirrors": 4,
+        "inversion": false
+      },
+      "matches_reference_claim": true,
+      "claim_level": "reference_model",
+      "limits": "Geometry symmetry is not specimen identification; photo-label ambiguities remain as supplied."
+    }
+  ]
+}

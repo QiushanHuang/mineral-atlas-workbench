@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Point-group standard and workflow audit
+
+- Correct 671/675 to the textbook shorthand `Lᵢ⁶ 3L² 3P`, separately reporting four actual mirror planes.
+- Ship a single offline 32-class catalogue with generated reports, viewers, result bundles, and the skill runtime.
+- Validate the declared group, system, shorthand, and complete axis-dependent operation set; retain conflicting input wording with a warning.
+- Include the catalogue in source/cache hashes; independently re-enumerate the fifteen reference models.
+- Preserve photo-label ambiguity, reference-index limits, existing geometry and fixed rotation scale.
+
 ## Unreleased — Authorized Photo Example
 
 - Publish the explicitly authorized451 set: three unchanged photographs, two original-pixel annotations, saved camera fits, and reference geometry.
