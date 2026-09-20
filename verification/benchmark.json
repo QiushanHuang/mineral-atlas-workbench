@@ -1,0 +1,108 @@
+{
+  "type": "algorithm_benchmark",
+  "scope": "15 fixed reference shapes / same normals and support distances / 3 alternating repeats",
+  "source_hash": "b42aac01d46064162c324b86a2d2c2adc18bee8a1394e216b557ec9ecb059fd3",
+  "rows": [
+    {
+      "id": "128",
+      "faces": 8,
+      "candidate_seconds": 0.00030800001695752144,
+      "baseline_seconds": 0.0007440000190399587
+    },
+    {
+      "id": "333",
+      "faces": 17,
+      "candidate_seconds": 0.00225575000513345,
+      "baseline_seconds": 0.005601833981927484
+    },
+    {
+      "id": "511",
+      "faces": 10,
+      "candidate_seconds": 0.0005471249460242689,
+      "baseline_seconds": 0.0013262080028653145
+    },
+    {
+      "id": "722",
+      "faces": 12,
+      "candidate_seconds": 0.0008856249623931944,
+      "baseline_seconds": 0.0021393749630078673
+    },
+    {
+      "id": "5518",
+      "faces": 26,
+      "candidate_seconds": 0.007594541006255895,
+      "baseline_seconds": 0.0188592909835279
+    },
+    {
+      "id": "7518",
+      "faces": 32,
+      "candidate_seconds": 0.01667187496786937,
+      "baseline_seconds": 0.046430832997430116
+    },
+    {
+      "id": "758",
+      "faces": 14,
+      "candidate_seconds": 0.0011801249929703772,
+      "baseline_seconds": 0.0029508749721571803
+    },
+    {
+      "id": "3519",
+      "faces": 26,
+      "candidate_seconds": 0.006460500007960945,
+      "baseline_seconds": 0.016324083029758185
+    },
+    {
+      "id": "2522",
+      "faces": 6,
+      "candidate_seconds": 0.00015616597374901175,
+      "baseline_seconds": 0.0003629999700933695
+    },
+    {
+      "id": "439",
+      "faces": 16,
+      "candidate_seconds": 0.0019995420007035136,
+      "baseline_seconds": 0.004578166990540922
+    },
+    {
+      "id": "451",
+      "faces": 6,
+      "candidate_seconds": 0.00015174999134615064,
+      "baseline_seconds": 0.00033104204339906573
+    },
+    {
+      "id": "611",
+      "faces": 20,
+      "candidate_seconds": 0.0036950419889762998,
+      "baseline_seconds": 0.008987292007077485
+    },
+    {
+      "id": "6512",
+      "faces": 20,
+      "candidate_seconds": 0.0036433330387808383,
+      "baseline_seconds": 0.008516916015651077
+    },
+    {
+      "id": "671",
+      "faces": 5,
+      "candidate_seconds": 0.00011724996147677302,
+      "baseline_seconds": 0.00029466598061844707
+    },
+    {
+      "id": "675",
+      "faces": 8,
+      "candidate_seconds": 0.0003375829546712339,
+      "baseline_seconds": 0.0007414579740725458
+    }
+  ],
+  "total_candidate_seconds": 0.046004206815268844,
+  "total_baseline_seconds": 0.11818903993116692,
+  "cold_pipeline_seconds": 0.3882395440014079,
+  "warm_cached_pipeline_seconds": 0.010354790254496038,
+  "quality": "same face/vertex counts and vertex sets within1e-7; candidate additionally rejects recession rays",
+  "token_metrics": null,
+  "limitations": [
+    "CPU smoke benchmark, not a broad performance ranking",
+    "No claim of OCR/model accuracy or LLM token savings",
+    "Same geometry inputs; entire old human workflow is not timed"
+  ]
+}

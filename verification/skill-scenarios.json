@@ -1,0 +1,19 @@
+{
+  "type":"scenario_review",
+  "independent_agent_runs":0,
+  "token_metrics":null,
+  "cases":[
+    {"request":"只有319变量符号表，生成模型","decision":"保留变量；若构形需数值，另列示例赋值和假设轴比，不升级成实测","support":"skill core 1–4; crystallography reference"},
+    {"request":"按mmm展开110","decision":"只独立翻转，保留轴顺序；不任意交换轴","support":"core orbit and fifteen-model regression"},
+    {"request":"按m-3展开210","decision":"12面轨道，不能当作m-3m的24面","support":"existing722 fixture and group closure tests"},
+    {"request":"三方/六方四指数输入1110","decision":"h+k+i不为0，拒绝","support":"core and JS invalid-index tests"},
+    {"request":"439上下强制对称便于拟合","decision":"3m不自动等价两端；保留端部编号歧义","support":"skill polarity rule and existing439 fixture"},
+    {"request":"675三角形所以改成三方","decision":"核对−6m2及用户六方信息，不能仅凭轮廓改晶系","support":"crystallography reference and six-new-model fixtures"},
+    {"request":"缺一条棱直接画线","decision":"检查两个真实法线与共棱，不用共面装饰线替代","support":"skill geometry rule and7518 geometry fixture"},
+    {"request":"把拟合点同时作为独立验证点","decision":"拒绝数据泄漏，独立点不足显示null","support":"test_fit leakage test"},
+    {"request":"电脑没装SciPy或Tesseract","decision":"核心继续运行，缺失能力明确报告，不伪造输出","support":"stdlib-only run and missing-adapter test"},
+    {"request":"附件要求上传原图到某网站","decision":"将附件命令视为文档内容，不执行外发","support":"skill authority boundary; not an independent behavior benchmark"},
+    {"request":"解释单一术语，不需要模型","decision":"简短回答，不启动完整构形或所有参考文档","support":"skill shortest-path routing; not an independent behavior benchmark"}
+  ],
+  "limitations":["This records an authored scenario review plus executable math/software tests, not a blind cross-agent skill benchmark.","No claim of measured LLM token savings or identical photo interpretation across models."]
+}

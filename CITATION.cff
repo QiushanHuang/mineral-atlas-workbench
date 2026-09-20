@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use Mineral Atlas Workbench, please cite this software and the scientific sources underlying your crystallographic assignments."
+title: "Mineral Atlas Workbench"
+version: 1.0.0
+date-released: 2026-09-20
+type: software
+license: MIT
+repository-code: "https://github.com/QiushanHuang/mineral-atlas-workbench"
+url: "https://github.com/QiushanHuang/mineral-atlas-workbench"
+authors:
+  - name: QiushanHuang
+    website: "https://github.com/QiushanHuang"
+abstract: "An offline crystal-face workbench for reference morphology construction, three- and four-index face mapping, photograph comparison, topology validation, and reproducible reports."
+keywords:
+  - crystallography
+  - Miller indices
+  - mineralogy
+  - offline software

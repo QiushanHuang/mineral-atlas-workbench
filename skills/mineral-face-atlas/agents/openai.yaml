@@ -1,0 +1,4 @@
+interface:
+  display_name: "矿物晶面工作台"
+  short_description: "有证据的三轴/四轴标定、离线建模、照片对照与五项报告"
+  default_prompt: "使用 $mineral-face-atlas 分析这些矿物模型资料，保留未知与假设，生成可按晶面指数定位的离线模型及五项报告。"

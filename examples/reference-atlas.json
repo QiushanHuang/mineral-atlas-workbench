@@ -1,0 +1,3588 @@
+[
+  {
+    "schema_version": 1,
+    "id": "128",
+    "title": "128 参考模型",
+    "crystal_system": "三斜",
+    "point_group": "-1",
+    "index_count": 3,
+    "basis": [
+      [
+        -0.12,
+        -1.0,
+        0.07
+      ],
+      [
+        -0.06,
+        -0.0,
+        1.0
+      ],
+      [
+        -1.0,
+        -0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 8,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 0.67,
+        "expand": false,
+        "label": "正面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 0.67,
+        "expand": false,
+        "label": "背面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 0.9909690081464914,
+        "expand": false,
+        "label": "右侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.9909690081464914,
+        "expand": false,
+        "label": "左侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          1,
+          -1,
+          0
+        ],
+        "distance": 0.9466856763059056,
+        "expand": false,
+        "label": "对角削切窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -1,
+          1,
+          0
+        ],
+        "distance": 0.9466856763059056,
+        "expand": false,
+        "label": "对角削切窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.597127752745246,
+        "expand": false,
+        "label": "上端六边形",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.597127752745246,
+        "expand": false,
+        "label": "下端六边形",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "C",
+      "axis_choice": "沿三组独立棱向选 a、b、c；三轴斜交，采用右手序。",
+      "basis_note": "由原三斜拟合变换选定的参考基底，轴长和轴角均为模型约定。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "333",
+    "title": "333 参考模型",
+    "crystal_system": "正交",
+    "point_group": "mm2",
+    "index_count": 3,
+    "basis": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.82
+      ],
+      [
+        0.0,
+        -0.6666666666666666,
+        0.0
+      ]
+    ],
+    "expected_faces": 17,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 0.46,
+        "expand": false,
+        "label": "正面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.46,
+        "expand": false,
+        "label": "背面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "右侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "左侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          0
+        ],
+        "distance": 0.7710332727530684,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -1,
+          -1,
+          0
+        ],
+        "distance": 0.7710332727530684,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          1,
+          1,
+          0
+        ],
+        "distance": 0.7710332727530684,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          -1,
+          0
+        ],
+        "distance": 0.7710332727530684,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          -33,
+          22,
+          30
+        ],
+        "distance": 1.0623947555776994,
+        "expand": false,
+        "label": "上端收尖斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          -33,
+          -22,
+          30
+        ],
+        "distance": 1.0623947555776994,
+        "expand": false,
+        "label": "上端收尖斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          33,
+          22,
+          30
+        ],
+        "distance": 1.0623947555776994,
+        "expand": false,
+        "label": "上端收尖斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          33,
+          -22,
+          30
+        ],
+        "distance": 1.0623947555776994,
+        "expand": false,
+        "label": "上端收尖斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          -25,
+          0,
+          -7
+        ],
+        "distance": 1.1019297724055734,
+        "expand": false,
+        "label": "下端截切斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          0,
+          100,
+          -33
+        ],
+        "distance": 0.5655975654846217,
+        "expand": false,
+        "label": "下端截切斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          25,
+          0,
+          -7
+        ],
+        "distance": 1.1019297724055734,
+        "expand": false,
+        "label": "下端截切斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          0,
+          -100,
+          -33
+        ],
+        "distance": 0.5655975654846217,
+        "expand": false,
+        "label": "下端截切斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.2136,
+        "expand": false,
+        "label": "下端矩形平面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L² 2P",
+      "axis_choice": "唯一 L² 取 c；两个镜面相交于 c，a、b 分别取垂直于另一镜面的方向；a⊥b⊥c。",
+      "basis_note": "模型参考 a:b:c=1:(2/3):0.82，选择 b 比例使窄柱面的模型指数成为 {110}；不是异极矿实测晶胞参数。",
+      "mineral_name": "异极矿",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "511",
+    "title": "511 参考模型",
+    "crystal_system": "四方",
+    "point_group": "4mm",
+    "index_count": 3,
+    "basis": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 10,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "正面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "背面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "右侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "左侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.6,
+        "expand": false,
+        "label": "上端方形平面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.6,
+        "expand": false,
+        "label": "下端菱形小平面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          -1,
+          1,
+          -2
+        ],
+        "distance": 1.2817175976009694,
+        "expand": false,
+        "label": "下端四个倾斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          -1,
+          -1,
+          -2
+        ],
+        "distance": 1.2817175976009694,
+        "expand": false,
+        "label": "下端四个倾斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          1,
+          1,
+          -2
+        ],
+        "distance": 1.2817175976009694,
+        "expand": false,
+        "label": "下端四个倾斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          1,
+          -1,
+          -2
+        ],
+        "distance": 1.2817175976009694,
+        "expand": false,
+        "label": "下端四个倾斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L⁴ 4P",
+      "axis_choice": "L⁴ 取 c；a、b 在垂直 c 的平面内，沿两条相互垂直的等价方向取轴。",
+      "basis_note": "模型参考 a:b:c=1:1:2，c/a 尚未测定；改变参考轴比会改变非零 l 的指数。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "722",
+    "title": "722 参考模型",
+    "crystal_system": "等轴",
+    "point_group": "m-3",
+    "index_count": 3,
+    "basis": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 12,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          -2,
+          -1
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          -1,
+          0,
+          -2
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          -2,
+          -1,
+          0
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          -2,
+          1
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          1,
+          0,
+          -2
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -2,
+          1,
+          0
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          0,
+          2,
+          -1
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          -1,
+          0,
+          2
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          2,
+          -1,
+          0
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          0,
+          2,
+          1
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          1,
+          0,
+          2
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          2,
+          1,
+          0
+        ],
+        "distance": 1.118033988749895,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "3L² 4L³ 3PC",
+      "axis_choice": "三条互相垂直的 L² 取 a、b、c，构成右手系。",
+      "basis_note": "等轴参考 a:b:c=1:1:1；指数对应当前重建方向，尚非实物定名。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "5518",
+    "title": "5518 参考模型",
+    "crystal_system": "四方",
+    "point_group": "4/mmm",
+    "index_count": 3,
+    "basis": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 26,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "正面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "背面宽柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "右侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "左侧柱面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          0
+        ],
+        "distance": 1.2162236636408617,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -1,
+          -1,
+          0
+        ],
+        "distance": 1.2162236636408617,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          1,
+          1,
+          0
+        ],
+        "distance": 1.2162236636408617,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          -1,
+          0
+        ],
+        "distance": 1.2162236636408617,
+        "expand": false,
+        "label": "纵向窄面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.58,
+        "expand": false,
+        "label": "端部小八边形",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          -1,
+          0,
+          -2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          0,
+          1,
+          -2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          1,
+          0,
+          -2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          0,
+          -1,
+          -2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          -5,
+          5,
+          -17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          -5,
+          -5,
+          -17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          5,
+          5,
+          -17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          5,
+          -5,
+          -17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F18",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.58,
+        "expand": false,
+        "label": "端部小八边形",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F19",
+        "hkl": [
+          -1,
+          0,
+          2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F20",
+        "hkl": [
+          0,
+          1,
+          2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F21",
+        "hkl": [
+          1,
+          0,
+          2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F22",
+        "hkl": [
+          0,
+          -1,
+          2
+        ],
+        "distance": 1.3788582233137676,
+        "expand": false,
+        "label": "端部宽斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F23",
+        "hkl": [
+          -5,
+          5,
+          17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F24",
+        "hkl": [
+          -5,
+          -5,
+          17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F25",
+        "hkl": [
+          5,
+          5,
+          17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F26",
+        "hkl": [
+          5,
+          -5,
+          17
+        ],
+        "distance": 1.508139131539859,
+        "expand": false,
+        "label": "端部窄斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L⁴ 4L² 5PC",
+      "axis_choice": "L⁴ 取 c；垂直 c 的四条 L² 中，取互相垂直的一对作为 a、b。",
+      "basis_note": "模型参考 a:b:c=1:1:2，c/a 尚未测定；改变参考轴比会改变非零 l 的指数。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "7518",
+    "title": "7518 参考模型",
+    "crystal_system": "等轴",
+    "point_group": "m-3m",
+    "index_count": 3,
+    "basis": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 32,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          -1,
+          -1,
+          -1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          -1,
+          -1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          -1,
+          -1,
+          1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          1,
+          -1,
+          1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          -1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          1,
+          1,
+          -1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          -1,
+          1,
+          1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          1,
+          1
+        ],
+        "distance": 0.9814954576223638,
+        "expand": false,
+        "label": "三角形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          -4,
+          -1,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          -4,
+          1,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          4,
+          -1,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          4,
+          1,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          -4,
+          -1,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          -4,
+          1,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          4,
+          -1,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          4,
+          1,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          -4,
+          -4,
+          -1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F18",
+        "hkl": [
+          -4,
+          -4,
+          1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F19",
+        "hkl": [
+          4,
+          -4,
+          -1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F20",
+        "hkl": [
+          4,
+          -4,
+          1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F21",
+        "hkl": [
+          -4,
+          4,
+          -1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F22",
+        "hkl": [
+          -4,
+          4,
+          1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F23",
+        "hkl": [
+          4,
+          4,
+          -1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F24",
+        "hkl": [
+          4,
+          4,
+          1
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F25",
+        "hkl": [
+          -1,
+          -4,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F26",
+        "hkl": [
+          1,
+          -4,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F27",
+        "hkl": [
+          -1,
+          -4,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F28",
+        "hkl": [
+          1,
+          -4,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F29",
+        "hkl": [
+          -1,
+          4,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F30",
+        "hkl": [
+          1,
+          4,
+          -4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F31",
+        "hkl": [
+          -1,
+          4,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F32",
+        "hkl": [
+          1,
+          4,
+          4
+        ],
+        "distance": 1.053169818531972,
+        "expand": false,
+        "label": "补棱后的独立四边形斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "3L⁴ 4L³ 6L² 9PC",
+      "axis_choice": "三条互相垂直的 L⁴ 取 a、b、c，构成右手系。",
+      "basis_note": "等轴参考 a:b:c=1:1:1；指数对应当前重建方向，尚非实物定名。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": [],
+      "highlight_face_pairs": [
+        [
+          "F09",
+          "F10"
+        ],
+        [
+          "F11",
+          "F12"
+        ],
+        [
+          "F13",
+          "F14"
+        ],
+        [
+          "F15",
+          "F16"
+        ],
+        [
+          "F17",
+          "F18"
+        ],
+        [
+          "F19",
+          "F20"
+        ],
+        [
+          "F21",
+          "F22"
+        ],
+        [
+          "F23",
+          "F24"
+        ],
+        [
+          "F25",
+          "F26"
+        ],
+        [
+          "F27",
+          "F28"
+        ],
+        [
+          "F29",
+          "F30"
+        ],
+        [
+          "F31",
+          "F32"
+        ]
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "758",
+    "title": "758 参考模型",
+    "crystal_system": "等轴",
+    "point_group": "m-3m",
+    "index_count": 3,
+    "basis": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 14,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "立方体面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          -1,
+          -1,
+          -1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          -1,
+          -1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          -1,
+          -1,
+          1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          1,
+          -1,
+          1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          -1,
+          1,
+          -1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          1,
+          1,
+          -1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          -1,
+          1,
+          1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          1,
+          1,
+          1
+        ],
+        "distance": 1.2701705922171769,
+        "expand": false,
+        "label": "八面体截角面",
+        "evidence": "理想晶形指数；758 实物未核对"
+      }
+    ],
+    "metadata": {
+      "symmetry": "3L⁴ 4L³ 6L² 9PC",
+      "axis_choice": "三条互相垂直的 L⁴ 取 a、b、c，构成右手系。",
+      "basis_note": "等轴参考 a:b:c=1:1:1；758 为理想 {100}+{111} 组合，并非缺失实物照片的复原。",
+      "mineral_name": "方铅矿",
+      "description": "理想立方体与八面体组合；未提供758实物照片",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "3519",
+    "title": "3519 参考模型",
+    "crystal_system": "正交",
+    "point_group": "mmm",
+    "index_count": 3,
+    "basis": [
+      [
+        0.0,
+        0.0,
+        1.4444444444444444
+      ],
+      [
+        1.1111111111111112,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 26,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          1,
+          0
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "正面宽面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          0,
+          -1,
+          0
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "背面宽面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.75,
+        "expand": false,
+        "label": "右端小面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.75,
+        "expand": false,
+        "label": "左端小面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          1,
+          0,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "上侧宽面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "下侧宽面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          -1,
+          -1,
+          0
+        ],
+        "distance": 0.8235699140418603,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          -1,
+          1,
+          0
+        ],
+        "distance": 0.8235699140418603,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          1,
+          -1,
+          0
+        ],
+        "distance": 0.8235699140418603,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          1,
+          1,
+          0
+        ],
+        "distance": 0.8235699140418603,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          0,
+          -1,
+          -1
+        ],
+        "distance": 1.1523339793653575,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          0,
+          1,
+          -1
+        ],
+        "distance": 1.1523339793653575,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          0,
+          -1,
+          1
+        ],
+        "distance": 1.1523339793653575,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          0,
+          1,
+          1
+        ],
+        "distance": 1.1523339793653575,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          -1,
+          0,
+          -1
+        ],
+        "distance": 1.5584207047318137,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          1,
+          0,
+          -1
+        ],
+        "distance": 1.5584207047318137,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          -1,
+          0,
+          1
+        ],
+        "distance": 1.5584207047318137,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F18",
+        "hkl": [
+          1,
+          0,
+          1
+        ],
+        "distance": 1.5584207047318137,
+        "expand": false,
+        "label": "棱部条状斜面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F19",
+        "hkl": [
+          -1,
+          -1,
+          -1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F20",
+        "hkl": [
+          -1,
+          1,
+          -1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F21",
+        "hkl": [
+          1,
+          -1,
+          -1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F22",
+        "hkl": [
+          1,
+          1,
+          -1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F23",
+        "hkl": [
+          -1,
+          -1,
+          1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F24",
+        "hkl": [
+          -1,
+          1,
+          1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F25",
+        "hkl": [
+          1,
+          -1,
+          1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F26",
+        "hkl": [
+          1,
+          1,
+          1
+        ],
+        "distance": 1.2951002648090217,
+        "expand": false,
+        "label": "角部三角形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "3L² 3PC",
+      "axis_choice": "三条互相垂直的 L² 作为 a、b、c；本页 c 沿长方向，a 沿宽方向，b 沿厚方向。",
+      "basis_note": "参考 a:b:c=(10/9):1:(13/9)，由假设三组棱斜面分别取 {110}/{101}/{011} 确定；该面型选择与轴比不是实物测定，也不等于外形长宽高之比。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "2522",
+    "title": "2522 参考模型",
+    "crystal_system": "单斜",
+    "point_group": "m",
+    "index_count": 3,
+    "basis": [
+      [
+        0.0,
+        -1.329323765685631,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        -1.004843771152344
+      ],
+      [
+        0.0,
+        0.0,
+        4.9999999974239495
+      ]
+    ],
+    "expected_faces": 6,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          -1,
+          0,
+          0
+        ],
+        "distance": 0.3687580214601006,
+        "expand": false,
+        "label": "四边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          -1,
+          0
+        ],
+        "distance": 0.2967752539470099,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          1,
+          1,
+          0
+        ],
+        "distance": 0.2967752539470099,
+        "expand": false,
+        "label": "五边形主面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          0,
+          1
+        ],
+        "distance": 1.898177744528794,
+        "expand": false,
+        "label": "三角形端面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.898177744528794,
+        "expand": false,
+        "label": "较小的三角端面（尺寸待核对）",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          -1,
+          0,
+          -1
+        ],
+        "distance": 0.6013828867520098,
+        "expand": false,
+        "label": "端部斜切四边形面",
+        "evidence": "所列参考基底下的模型指数；非实物测定"
+      }
+    ],
+    "metadata": {
+      "symmetry": "P",
+      "axis_choice": "b 取唯一镜面 P 的法线；c 沿显著长棱，a 在镜面内按参考基底补定（缺少独立棱向标定）；安置为 c 直立、b 左右水平、a 朝前下倾。",
+      "basis_note": "a 沿 +Y，b 沿镜面法线 −X，c 沿模型斜棱方向；β>90°。参考参数来自照片拟合，较小端面未独立确认，不能据此确定真实面数与矿物点群。",
+      "mineral_name": "",
+      "description": "照片约束近似构形，非测量级复原",
+      "notes": []
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "439",
+    "title": "电气石 · 九柱面与异形两端",
+    "crystal_system": "三方",
+    "point_group": "3m",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 16,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          1,
+          -1,
+          0,
+          2
+        ],
+        "distance": 1.82,
+        "expand": false,
+        "label": "原图 1 · 正端三方单锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "distance": 1.82,
+        "expand": false,
+        "label": "原图 2 · 正端三方单锥面",
+        "evidence": "尖端照2与侧面照片的环向对应尚有歧义；本页按侧面及负端相邻关系暂配，需实物翻转核对",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          1,
+          -1,
+          2
+        ],
+        "distance": 1.82,
+        "expand": false,
+        "label": "原图 3 · 正端三方单锥面",
+        "evidence": "尖端照2与侧面照片的环向对应尚有歧义；本页按侧面及负端相邻关系暂配，需实物翻转核对",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          1,
+          -1,
+          0,
+          -2
+        ],
+        "distance": 1.7200000000000002,
+        "expand": false,
+        "label": "原图 4 · 负端三方单锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          0,
+          1,
+          -2
+        ],
+        "distance": 1.72,
+        "expand": false,
+        "label": "原图 5 · 负端三方单锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          0,
+          1,
+          -1,
+          -2
+        ],
+        "distance": 1.7200000000000002,
+        "expand": false,
+        "label": "原图 6 · 负端三方单锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "6"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.85,
+        "expand": false,
+        "label": "原图 7 · 负端底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "7"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "distance": 0.78,
+        "expand": false,
+        "label": "原图 8 · 宽柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "8"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          3,
+          -2,
+          -1,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 9 · 窄柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "9"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          1,
+          2,
+          -3,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 10 · 窄柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "10"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          2,
+          -3,
+          1,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 11 · 窄柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "11"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "distance": 0.78,
+        "expand": false,
+        "label": "原图 12 · 宽柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "12"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          -2,
+          -1,
+          3,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 13 · 窄柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "13"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          -3,
+          1,
+          2,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 14 · 窄柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "14"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          -1,
+          3,
+          -2,
+          0
+        ],
+        "distance": 1.02,
+        "expand": false,
+        "label": "原图 15 · 窄柱面",
+        "evidence": "照片中编号未清楚读出；按剩余窄面及三重关系暂配",
+        "photo_label": "15"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "distance": 0.78,
+        "expand": false,
+        "label": "原图 16 · 宽柱面",
+        "evidence": "宽面位置由三重关系与相邻窄面推定；编号暂配",
+        "photo_label": "16"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L³ 3P",
+      "axis_choice": "以唯一 L³ 为 c，+c 指向1、2、3相交的尖端；基面内沿三个等价方向取 a₁、a₂、a₃。",
+      "basis_note": "参考 a:c=1:2，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "电气石",
+      "description": "9 个柱面 + 正端3个锥面 + 负端3个锥面及1个底面。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。",
+        "439 的尖端2/3环向对应尚需翻转核对；照片2保留原图，不提供可能误导的编号线框。",
+        "矿物名由用户给定。黑电气石手册仅用于核对3m，不据照片确定电气石种属。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "451",
+    "title": "六面菱面体",
+    "crystal_system": "三方",
+    "point_group": "-3m",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.44
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 6,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 1 · 菱面体面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 2 · 菱面体面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 3 · 菱面体面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 4 · 菱面体相反面",
+        "evidence": "按照片相邻关系及中心对称暂配；1/4与3/6对应仍需实物翻转核对",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 5 · 菱面体相反面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 6 · 菱面体相反面",
+        "evidence": "按照片相邻关系及中心对称暂配；1/4与3/6对应仍需实物翻转核对",
+        "photo_label": "6"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L³ 3L² 3PC",
+      "axis_choice": "以通过3、4、5会合顶点的 L³ 为 +c；三个基面 L² 方向取 a₁、a₂、a₃。",
+      "basis_note": "参考 a:c=1:2.44，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "",
+      "description": "六个菱形面围合；三次轴通过三面会合的两个对顶点。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "611",
+    "title": "截尖六方双锥 · 错位窄柱面",
+    "crystal_system": "六方",
+    "point_group": "6/mmm",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.8
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 20,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 1 · 双锥正端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 2 · 双锥正端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 3 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 4 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 5 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 6 · 双锥正端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "6"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          1,
+          1,
+          -2,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 7 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "7"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          -1,
+          2,
+          -1,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 8 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "8"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          -1,
+          -1,
+          2,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 9 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "9"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          -2,
+          1,
+          1,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 10 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "10"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          1,
+          -2,
+          1,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 11 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "11"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          2,
+          -1,
+          -1,
+          0
+        ],
+        "distance": 1.2,
+        "expand": false,
+        "label": "原图 12 · 赤道窄柱面（与锥面错转30°）",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "12"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 13 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "13"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 14 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "14"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 15 · 双锥正端面",
+        "evidence": "未清楚读到编号；按3的另一端相邻面及剩余编号暂配",
+        "photo_label": "15"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 16 · 双锥正端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "16"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 17 · 双锥正端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "17"
+      },
+      {
+        "id": "F18",
+        "hkl": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "distance": 1.08,
+        "expand": false,
+        "label": "原图 18 · 双锥负端面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "18"
+      },
+      {
+        "id": "F19",
+        "hkl": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "distance": 2.28,
+        "expand": false,
+        "label": "原图 19 · 负端六边形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "19"
+      },
+      {
+        "id": "F20",
+        "hkl": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 2.28,
+        "expand": false,
+        "label": "原图 20 · 正端六边形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "20"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L⁶ 6L² 7PC",
+      "axis_choice": "以两端底面19、20的中心连线为 c，+c 指向20；三个等价基面方向取 a₁、a₂、a₃。",
+      "basis_note": "参考 a:c=1:2.8，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "",
+      "description": "12 个锥面 + 赤道6个窄柱面 + 两端2个六边形底面。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "6512",
+    "title": "六方柱与两端截锥",
+    "crystal_system": "六方",
+    "point_group": "6/mmm",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.3
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 20,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 1 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 2 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 3 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 4 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 5 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "distance": 1.0,
+        "expand": false,
+        "label": "原图 6 · 六方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "6"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 7 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "7"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 8 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "8"
+      },
+      {
+        "id": "F09",
+        "hkl": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 9 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "9"
+      },
+      {
+        "id": "F10",
+        "hkl": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 10 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "10"
+      },
+      {
+        "id": "F11",
+        "hkl": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 11 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "11"
+      },
+      {
+        "id": "F12",
+        "hkl": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 12 · 正端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "12"
+      },
+      {
+        "id": "F13",
+        "hkl": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 13 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "13"
+      },
+      {
+        "id": "F14",
+        "hkl": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 14 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "14"
+      },
+      {
+        "id": "F15",
+        "hkl": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 15 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "15"
+      },
+      {
+        "id": "F16",
+        "hkl": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 16 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "16"
+      },
+      {
+        "id": "F17",
+        "hkl": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 17 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "17"
+      },
+      {
+        "id": "F18",
+        "hkl": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "distance": 1.35,
+        "expand": false,
+        "label": "原图 18 · 负端六方锥面",
+        "evidence": "按侧面照片1、4的端部相邻关系暂配；与端面照2、3的环向对应仍需实物翻转核对",
+        "photo_label": "18"
+      },
+      {
+        "id": "F19",
+        "hkl": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 1.4,
+        "expand": false,
+        "label": "原图 19 · 正端底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "19"
+      },
+      {
+        "id": "F20",
+        "hkl": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.4,
+        "expand": false,
+        "label": "原图 20 · 负端底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "20"
+      }
+    ],
+    "metadata": {
+      "symmetry": "L⁶ 6L² 7PC",
+      "axis_choice": "以六次轴 L⁶ 为 c，+c 指向底面19；基面内三个等价方向取 a₁、a₂、a₃。",
+      "basis_note": "参考 a:c=1:1.3，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "",
+      "description": "6 个柱面 + 两端各6个斜面、1个底面。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。",
+        "端面照2、3的环向编号与侧面对应尚需核对；保留原图，不叠加确定编号线框。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "671",
+    "title": "三方柱形 · 六方晶系",
+    "crystal_system": "六方",
+    "point_group": "-6m2",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        2.0
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 5,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 1.6,
+        "expand": false,
+        "label": "原图 1 · 正端三角形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "distance": 0.65,
+        "expand": false,
+        "label": "原图 2 · 三方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "distance": 0.65,
+        "expand": false,
+        "label": "原图 3 · 三方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "distance": 0.65,
+        "expand": false,
+        "label": "原图 4 · 三方柱面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "distance": 1.6,
+        "expand": false,
+        "label": "原图 5 · 负端三角形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      }
+    ],
+    "metadata": {
+      "symmetry": "Lᵢ⁶ 3L² 4P",
+      "axis_choice": "以三角形两底面中心连线上的六次反轴为 c，+c 指向1；基面内沿三个竖直镜面的法线取 a₁、a₂、a₃（L² 位于相邻基轴之间）。",
+      "basis_note": "参考 a:c=1:2，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "",
+      "description": "3 个矩形侧面 + 2 个三角形底面，共5面。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。",
+        "Lᵢ⁶ 表示六次反轴。三角形外观不等于三方晶系；该候选有水平镜面，属于六方 −6m2。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  },
+  {
+    "schema_version": 1,
+    "id": "675",
+    "title": "截尖三方双锥 · 六方晶系",
+    "crystal_system": "六方",
+    "point_group": "-6m2",
+    "index_count": 4,
+    "basis": [
+      [
+        -0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.55
+      ],
+      [
+        0.8660254037844386,
+        0.0,
+        0.0
+      ]
+    ],
+    "expected_faces": 8,
+    "faces": [
+      {
+        "id": "F01",
+        "hkl": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 0.3,
+        "expand": false,
+        "label": "原图 1 · 正端三角形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "1"
+      },
+      {
+        "id": "F02",
+        "hkl": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 2 · 正端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "2"
+      },
+      {
+        "id": "F03",
+        "hkl": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 3 · 正端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "3"
+      },
+      {
+        "id": "F04",
+        "hkl": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 4 · 正端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "4"
+      },
+      {
+        "id": "F05",
+        "hkl": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "distance": 0.3,
+        "expand": false,
+        "label": "原图 5 · 负端三角形底面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "5"
+      },
+      {
+        "id": "F06",
+        "hkl": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 6 · 负端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "6"
+      },
+      {
+        "id": "F07",
+        "hkl": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 7 · 负端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "7"
+      },
+      {
+        "id": "F08",
+        "hkl": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "distance": 0.55,
+        "expand": false,
+        "label": "原图 8 · 负端三方锥面",
+        "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+        "photo_label": "8"
+      }
+    ],
+    "metadata": {
+      "symmetry": "Lᵢ⁶ 3L² 4P",
+      "axis_choice": "以两截尖三角形中心连线上的六次反轴为 c，+c 指向1；基面内沿三个竖直镜面的法线取 a₁、a₂、a₃（L² 位于相邻基轴之间）。",
+      "basis_note": "参考 a:c=1:0.55，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+      "mineral_name": "",
+      "description": "6 个梯形斜面 + 2 个三角形底面，共8面。",
+      "notes": [
+        "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+        "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+        "照片和模型并列核对；只有已配准照片提供线框。",
+        "Lᵢ⁶ 表示六次反轴。三角形外观不等于三方晶系；该候选有水平镜面，属于六方 −6m2。"
+      ]
+    },
+    "evidence": [
+      {
+        "type": "reference_model",
+        "source": "既有十五组模型的参考参数；照片不随通用包分发",
+        "status": "assumed"
+      }
+    ]
+  }
+]

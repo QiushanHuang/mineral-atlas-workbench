@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.atlas-python
+.env
+.env.*
+/atlas-runs/
+/evaluation/
+/dist/
+/wheelhouse/
+/docs/WORK.md
+/SHA256.json
+*.log

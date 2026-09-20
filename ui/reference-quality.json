@@ -1,0 +1,249 @@
+{
+  "128": {
+    "ok": true,
+    "errors": [],
+    "vertices": 12,
+    "edges": 18,
+    "faces": 8,
+    "euler": 2,
+    "volume": 8.376000000000001,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 24,
+      "plane_count": 8
+    }
+  },
+  "333": {
+    "ok": true,
+    "errors": [],
+    "vertices": 29,
+    "edges": 44,
+    "faces": 17,
+    "euler": 2,
+    "volume": 3.63292982726563,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [
+      "F09含高指数，应核对拟合斜率有理化与轴比假设",
+      "F10含高指数，应核对拟合斜率有理化与轴比假设",
+      "F11含高指数，应核对拟合斜率有理化与轴比假设",
+      "F12含高指数，应核对拟合斜率有理化与轴比假设",
+      "F14含高指数，应核对拟合斜率有理化与轴比假设",
+      "F16含高指数，应核对拟合斜率有理化与轴比假设"
+    ],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 564,
+      "plane_count": 17
+    }
+  },
+  "511": {
+    "ok": true,
+    "errors": [],
+    "vertices": 16,
+    "edges": 24,
+    "faces": 10,
+    "euler": 2,
+    "volume": 11.121114666666664,
+    "max_plane_residual": 0,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 84,
+      "plane_count": 10
+    }
+  },
+  "722": {
+    "ok": true,
+    "errors": [],
+    "vertices": 20,
+    "edges": 30,
+    "faces": 12,
+    "euler": 2,
+    "volume": 7.812500000000007,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 160,
+      "plane_count": 12
+    }
+  },
+  "5518": {
+    "ok": true,
+    "errors": [],
+    "vertices": 32,
+    "edges": 56,
+    "faces": 26,
+    "euler": 2,
+    "volume": 9.739456759999998,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 2064,
+      "plane_count": 26
+    }
+  },
+  "7518": {
+    "ok": true,
+    "errors": [],
+    "vertices": 30,
+    "edges": 60,
+    "faces": 32,
+    "euler": 2,
+    "volume": 5.77019791666666,
+    "max_plane_residual": 1.1102230246251565e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 4288,
+      "plane_count": 32
+    }
+  },
+  "758": {
+    "ok": true,
+    "errors": [],
+    "vertices": 24,
+    "edges": 36,
+    "faces": 14,
+    "euler": 2,
+    "volume": 7.317333333333334,
+    "max_plane_residual": 0,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 232,
+      "plane_count": 14
+    }
+  },
+  "3519": {
+    "ok": true,
+    "errors": [],
+    "vertices": 24,
+    "edges": 48,
+    "faces": 26,
+    "euler": 2,
+    "volume": 6.023984000000002,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 1968,
+      "plane_count": 26
+    }
+  },
+  "2522": {
+    "ok": true,
+    "errors": [],
+    "vertices": 8,
+    "edges": 12,
+    "faces": 6,
+    "euler": 2,
+    "volume": 2.8004850460027684,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 13,
+      "plane_count": 6
+    }
+  },
+  "439": {
+    "ok": true,
+    "errors": [],
+    "vertices": 28,
+    "edges": 42,
+    "faces": 16,
+    "euler": 2,
+    "volume": 10.481231088908702,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 458,
+      "plane_count": 16
+    }
+  },
+  "451": {
+    "ok": true,
+    "errors": [],
+    "vertices": 8,
+    "edges": 12,
+    "faces": 6,
+    "euler": 2,
+    "volume": 10.365492807953476,
+    "max_plane_residual": 3.3306690738754696e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 8,
+      "plane_count": 6
+    }
+  },
+  "611": {
+    "ok": true,
+    "errors": [],
+    "vertices": 36,
+    "edges": 54,
+    "faces": 20,
+    "euler": 2,
+    "volume": 10.190288980330656,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 880,
+      "plane_count": 20
+    }
+  },
+  "6512": {
+    "ok": true,
+    "errors": [],
+    "vertices": 24,
+    "edges": 42,
+    "faces": 20,
+    "euler": 2,
+    "volume": 8.800517731890665,
+    "max_plane_residual": 0,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 808,
+      "plane_count": 20
+    }
+  },
+  "671": {
+    "ok": true,
+    "errors": [],
+    "vertices": 6,
+    "edges": 9,
+    "faces": 5,
+    "euler": 2,
+    "volume": 7.025198075499368,
+    "max_plane_residual": 1.1102230246251565e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 6,
+      "plane_count": 5
+    }
+  },
+  "675": {
+    "ok": true,
+    "errors": [],
+    "vertices": 9,
+    "edges": 15,
+    "faces": 8,
+    "euler": 2,
+    "volume": 2.0023727998322016,
+    "max_plane_residual": 2.220446049250313e-16,
+    "warnings": [],
+    "claim_level": "reference_model",
+    "stats": {
+      "triple_candidates": 44,
+      "plane_count": 8
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mineral-atlas-workbench",
+  "version": "1.0.0",
+  "description": "本机晶面分析、三轴/四轴构形、照片配准与可复现报告",
+  "author": {
+    "name": "QiushanHuang",
+    "url": "https://github.com/QiushanHuang"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "矿物晶面工作台",
+    "shortDescription": "离线建模、查面、照片对照与五项报告",
+    "longDescription": "共用Python核心的本机界面、CLI与MCP；保留证据、假设和编号歧义。支持32类点群参考操作与三轴/四轴指数。",
+    "developerName": "QiushanHuang",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "根据这些矿物模型照片，保留未知信息并建立可核对的晶面候选。",
+      "按这份轴系与晶面参数生成离线三维模型、拓扑和五项报告。",
+      "核对这个模型的面号、轴向、配准歧义和可复现记录。"
+    ],
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "brandColor": "#183B32"
+  },
+  "mcpServers": "./.mcp.json",
+  "homepage": "https://github.com/QiushanHuang/mineral-atlas-workbench",
+  "repository": "https://github.com/QiushanHuang/mineral-atlas-workbench",
+  "license": "MIT"
+}

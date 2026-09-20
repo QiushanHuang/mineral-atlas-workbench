@@ -1,0 +1,5 @@
+# Optional fitting environment validated on Python 3.13.3, macOS arm64.
+# Core geometry/report/viewer do not require these packages.
+numpy==2.4.4
+scipy==1.17.1
+Pillow==12.1.1

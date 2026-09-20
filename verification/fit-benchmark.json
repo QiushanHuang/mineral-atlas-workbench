@@ -1,0 +1,51 @@
+{
+  "type": "algorithm_benchmark",
+  "source_hash": "b42aac01d46064162c324b86a2d2c2adc18bee8a1394e216b557ec9ecb059fd3",
+  "scope": "two451photoobservations, same geometry, native-pixel corner RMSE, linear loss, 3 alternating repeats",
+  "baseline_seconds": 0.6159404999925755,
+  "candidate_seconds": 0.13981637498363853,
+  "trials": [
+    {
+      "baseline_seconds": 0.656284875003621,
+      "baseline_rmse_native": [
+        9.067221435186912,
+        12.131765224555572
+      ],
+      "candidate_seconds": 0.13955704198451713,
+      "candidate_rmse_native": [
+        8.767710629771392,
+        11.994634216905748
+      ]
+    },
+    {
+      "candidate_seconds": 0.14080954197561368,
+      "candidate_rmse_native": [
+        8.767710629771392,
+        11.994634216905748
+      ],
+      "baseline_seconds": 0.6159404999925755,
+      "baseline_rmse_native": [
+        9.067221435186912,
+        12.131765224555572
+      ]
+    },
+    {
+      "baseline_seconds": 0.6090412919875234,
+      "baseline_rmse_native": [
+        9.067221435186912,
+        12.131765224555572
+      ],
+      "candidate_seconds": 0.13981637498363853,
+      "candidate_rmse_native": [
+        8.767710629771392,
+        11.994634216905748
+      ]
+    }
+  ],
+  "limitations": [
+    "Center/visibility weighting and initialization differ intentionally; not identical objective functions",
+    "No independent photo holdout exists in these two source observations",
+    "Synthetic known-camera holdout is tested separately",
+    "Not a broad performance or recognition-accuracy benchmark"
+  ]
+}
