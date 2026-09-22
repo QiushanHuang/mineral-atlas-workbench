@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use Mineral Atlas Workbench, please cite this software and the scientific sources underlying your crystallographic assignments."
 title: "Mineral Atlas Workbench"
-version: 1.0.0
-date-released: 2026-09-20
+version: 1.0.1
+date-released: 2026-09-22
 type: software
 license: MIT
 repository-code: "https://github.com/QiushanHuang/mineral-atlas-workbench"

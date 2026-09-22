@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![Workflow](https://img.shields.io/badge/Workflow-Offline%20%7C%20CLI%20%7C%20MCP-0f766e)](#three-ways-to-work)
 [![Crystallography](https://img.shields.io/badge/Indices-hkl%20%7C%20hkil-47694b)](#crystal-faces-and-coordinate-systems)
-[![Status](https://img.shields.io/badge/Status-v1.0.0-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
+[![Status](https://img.shields.io/badge/Status-v1.0.1-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
 [![CI](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml/badge.svg)](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-16a34a)](LICENSE)
 
@@ -19,6 +19,10 @@
 It is built for the moment when a report lists a face such as `(1 0 −1 0)`, but you still need to know **which face it is, how it meets its neighbors, and how that assignment relates to the photograph**.
 
 The same computational core powers a browser interface, a command-line tool, and an agent plugin. Parameters and evidence stay with the result, so another person can reproduce the calculation instead of reconstructing the workflow from a conversation.
+
+## v1.0.1 — Model 611 correction
+
+The lower six faces are longer and end at a wider six-sided rim. Face numbers and shared-edge connections are preserved. The unequal reference shape now has geometric symmetry `6mm`; reports and indices were regenerated. [Changes and before/after view](docs/611-correction.md).
 
 ## Why Mineral Atlas
 
@@ -96,8 +100,8 @@ Product name: **Mineral Atlas Workbench**. Plugin name: `mineral-atlas-workbench
 
 Download from [GitHub Releases](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest):
 
-- **`mineral-atlas-workbench-1.0.0.zip`** — software, plugin, examples, documentation, and tests
-- **`mineral-face-atlas-skill-2.0.0.zip`** — standalone skill with its offline runtime
+- **`mineral-atlas-workbench-1.0.1.zip`** — software, plugin, examples, documentation, and tests
+- **`mineral-face-atlas-skill-2.0.1.zip`** — standalone skill with its offline runtime
 - **`release-checksums.json`** — SHA-256 hashes for both archives
 
 Extract the complete archive. To inspect the prebuilt atlas, open **`查看预置图谱.html`** or `ui/reference-atlas.html`. This needs neither Python nor a server.
@@ -300,7 +304,7 @@ Development, documentation, and logo design were assisted by OpenAI Codex and im
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![工作流](https://img.shields.io/badge/Workflow-Offline%20%7C%20CLI%20%7C%20MCP-0f766e)](#三种使用方式)
 [![晶面指数](https://img.shields.io/badge/Indices-hkl%20%7C%20hkil-47694b)](#晶面与坐标系)
-[![版本](https://img.shields.io/badge/Status-v1.0.0-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
+[![版本](https://img.shields.io/badge/Status-v1.0.1-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
 [![CI](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml/badge.svg)](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml)
 [![许可证](https://img.shields.io/badge/License-MIT-16a34a)](LICENSE)
 
@@ -311,6 +315,10 @@ Development, documentation, and logo design were assisted by OpenAI Codex and im
 它适合这样的场景：报告上写着 `(1 0 −1 0)`，但你还需要知道，**它究竟是哪一张面、与哪些面共棱，以及这个标记如何对应原图**。
 
 浏览器界面、命令行和 agent 插件共用同一计算核心。参数和证据随结果保存，其他人可以复现计算，而不必从一段对话中重新拼出整个工作流。
+
+## v1.0.1 · 611 下端外形修正
+
+按照片2加长下方六面并加宽底部，保留面号和共棱关系。上下端比例不同后，参考外形的几何点群更新为`6mm`，相关指数和报告已同步。[更新说明与前后对照](docs/611-correction.md)。
 
 ## 为什么是 Mineral Atlas
 
@@ -387,8 +395,8 @@ python3 scripts/build_photo_example.py --out atlas-runs/451-photo-study
 
 从[GitHub Releases](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)下载：
 
-- **`mineral-atlas-workbench-1.0.0.zip`**：软件、插件、案例、文档与测试
-- **`mineral-face-atlas-skill-2.0.0.zip`**：附带离线运行时的独立skill
+- **`mineral-atlas-workbench-1.0.1.zip`**：软件、插件、案例、文档与测试
+- **`mineral-face-atlas-skill-2.0.1.zip`**：附带离线运行时的独立skill
 - **`release-checksums.json`**：两份压缩包的SHA-256
 
 完整解压后，打开**`查看预置图谱.html`**或`ui/reference-atlas.html`即可浏览已有模型，不需要Python，也不需要启动服务器。

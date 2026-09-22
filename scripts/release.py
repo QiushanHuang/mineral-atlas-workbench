@@ -34,6 +34,6 @@ if __name__=='__main__':
      data=f.read_bytes()
      for pattern in [(str(pathlib.Path.home())+'/').encode(),b'com.tencent.'+b'xinWeChat',b'evaluation/'+b'ui-runs']:
       if pattern in data:raise ValueError('分享包出现私人路径：'+str(f.relative_to(tree)))
-  receipts=[zip_tree(stage,a.out/'mineral-atlas-workbench-1.0.0.zip'),zip_tree(standalone,a.out/'mineral-face-atlas-skill-2.0.0.zip')]
+  receipts=[zip_tree(stage,a.out/'mineral-atlas-workbench-1.0.1.zip'),zip_tree(standalone,a.out/'mineral-face-atlas-skill-2.0.1.zip')]
   if a.copy_plugin:copy_release(a.copy_plugin.expanduser().resolve())
  (a.out/'release-checksums.json').write_text(json.dumps(receipts,indent=2), encoding="utf-8");print(json.dumps(receipts,indent=2))

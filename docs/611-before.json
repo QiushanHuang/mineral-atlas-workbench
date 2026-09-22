@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "id": "611",
+  "title": "截尖六方双锥 · 错位窄柱面",
+  "crystal_system": "六方",
+  "point_group": "6/mmm",
+  "index_count": 4,
+  "basis": [
+    [
+      -0.5,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      2.8
+    ],
+    [
+      0.8660254037844386,
+      0.0,
+      0.0
+    ]
+  ],
+  "expected_faces": 20,
+  "faces": [
+    {
+      "id": "F01",
+      "hkl": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 1 · 双锥正端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "1"
+    },
+    {
+      "id": "F02",
+      "hkl": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 2 · 双锥正端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "2"
+    },
+    {
+      "id": "F03",
+      "hkl": [
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 3 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "3"
+    },
+    {
+      "id": "F04",
+      "hkl": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 4 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "4"
+    },
+    {
+      "id": "F05",
+      "hkl": [
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 5 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "5"
+    },
+    {
+      "id": "F06",
+      "hkl": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 6 · 双锥正端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "6"
+    },
+    {
+      "id": "F07",
+      "hkl": [
+        1,
+        1,
+        -2,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 7 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "7"
+    },
+    {
+      "id": "F08",
+      "hkl": [
+        -1,
+        2,
+        -1,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 8 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "8"
+    },
+    {
+      "id": "F09",
+      "hkl": [
+        -1,
+        -1,
+        2,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 9 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "9"
+    },
+    {
+      "id": "F10",
+      "hkl": [
+        -2,
+        1,
+        1,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 10 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "10"
+    },
+    {
+      "id": "F11",
+      "hkl": [
+        1,
+        -2,
+        1,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 11 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "11"
+    },
+    {
+      "id": "F12",
+      "hkl": [
+        2,
+        -1,
+        -1,
+        0
+      ],
+      "distance": 1.2,
+      "expand": false,
+      "label": "原图 12 · 赤道窄柱面（与锥面错转30°）",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "12"
+    },
+    {
+      "id": "F13",
+      "hkl": [
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 13 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "13"
+    },
+    {
+      "id": "F14",
+      "hkl": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 14 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "14"
+    },
+    {
+      "id": "F15",
+      "hkl": [
+        0,
+        -1,
+        1,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 15 · 双锥正端面",
+      "evidence": "未清楚读到编号；按3的另一端相邻面及剩余编号暂配",
+      "photo_label": "15"
+    },
+    {
+      "id": "F16",
+      "hkl": [
+        -1,
+        0,
+        1,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 16 · 双锥正端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "16"
+    },
+    {
+      "id": "F17",
+      "hkl": [
+        -1,
+        1,
+        0,
+        1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 17 · 双锥正端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "17"
+    },
+    {
+      "id": "F18",
+      "hkl": [
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "distance": 1.08,
+      "expand": false,
+      "label": "原图 18 · 双锥负端面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "18"
+    },
+    {
+      "id": "F19",
+      "hkl": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "distance": 2.28,
+      "expand": false,
+      "label": "原图 19 · 负端六边形底面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "19"
+    },
+    {
+      "id": "F20",
+      "hkl": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "distance": 2.28,
+      "expand": false,
+      "label": "原图 20 · 正端六边形底面",
+      "evidence": "照片编号与相邻关系；遮挡面按候选对称关系补全",
+      "photo_label": "20"
+    }
+  ],
+  "metadata": {
+    "symmetry": "L⁶ 6L² 7PC",
+    "axis_choice": "以两端底面19、20的中心连线为 c，+c 指向20；三个等价基面方向取 a₁、a₂、a₃。",
+    "basis_note": "参考 a:c=1:2.8，用于候选面型的可计算展示，不是实测晶胞轴比；面距按照片外形近似设定。四指数 (h k i l) 必须 h+k+i=0。 图中轴箭头仅表示方向与正负，长度不表示晶胞轴长。",
+    "mineral_name": "",
+    "description": "12 个锥面 + 赤道6个窄柱面 + 两端2个六边形底面。",
+    "notes": [
+      "用户确认晶系与总面数；F01 对应照片红色1，依此类推。",
+      "按照平面、共棱与候选对称关系构形；编号证据见逐面表。",
+      "照片和模型并列核对；只有已配准照片提供线框。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "reference_model",
+      "source": "既有十五组模型的参考参数；照片不随通用包分发",
+      "status": "assumed"
+    }
+  ]
+}

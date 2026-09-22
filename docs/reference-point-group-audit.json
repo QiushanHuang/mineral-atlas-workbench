@@ -181,13 +181,13 @@
       "id": "611",
       "faces": 20,
       "crystal_system": "六方",
-      "declared": "6/mmm",
-      "geometry_group": "6/mmm",
-      "textbook": "L⁶ 6L² 7PC",
+      "declared": "6mm",
+      "geometry_group": "6mm",
+      "textbook": "L⁶ 6P",
       "elements": {
-        "order": 24,
-        "mirrors": 7,
-        "inversion": true
+        "order": 12,
+        "mirrors": 6,
+        "inversion": false
       },
       "matches_reference_claim": true,
       "claim_level": "reference_model",

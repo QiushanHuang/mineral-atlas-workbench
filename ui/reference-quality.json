@@ -189,12 +189,12 @@
     "edges": 54,
     "faces": 20,
     "euler": 2,
-    "volume": 10.190288980330656,
-    "max_plane_residual": 2.220446049250313e-16,
+    "volume": 14.66553948928841,
+    "max_plane_residual": 4.440892098500626e-16,
     "warnings": [],
     "claim_level": "reference_model",
     "stats": {
-      "triple_candidates": 880,
+      "triple_candidates": 958,
       "plane_count": 20
     }
   },

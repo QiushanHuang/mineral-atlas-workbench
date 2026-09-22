@@ -8,7 +8,7 @@ The offline catalogue is maintained in [`atlas/point-groups-32.json`](../atlas/p
 |---|---:|---|---|---|
 |439 tourmaline|16|Trigonal|3m|L³ 3P|
 |451|6|Trigonal|−3m|L³ 3L² 3PC|
-|611|20|Hexagonal|6/mmm|L⁶ 6L² 7PC|
+|611|20|Hexagonal|6mm|L⁶ 6P|
 |6512|20|Hexagonal|6/mmm|L⁶ 6L² 7PC|
 |671|5|Hexagonal|−6m2|Lᵢ⁶ 3L² 3P|
 |675|8|Hexagonal|−6m2|Lᵢ⁶ 3L² 3P|
@@ -26,3 +26,5 @@ For −6m2, the third power of the sixfold rotoinversion produces the horizontal
 The physical specimen point group and physical Miller indices are not established by these checks. 439 tip labels, 451 opposite-face labels, 611 face 15 and 6512 end-label handedness retain their supplied uncertainty. Private photographs or textbook scans are not newly published by this update. The previously authorized 451 dataset is unchanged.
 
 The local case-study review also corrected historical model-count wording and a stale 18-view summary to 29 views. These are local dataset statistics, not a new claim that the public gallery contains those private photos. The public reference gallery remains photo-free; the separate 451 example has its own authorized assets and annotations.
+
+611 was updated on 2026-09-22 after the user confirmed the lower-end proportion correction. Its unequal end slopes and sizes remove the horizontal mirror and inversion; [the correction note](611-correction.md) supersedes the earlier symmetric-shape conclusion.
