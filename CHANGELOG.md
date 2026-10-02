@@ -12,6 +12,10 @@ The latest tagged release and its downloadable archives remain v1.0.1. The `main
 - Verify 128 Python tests without skips in the configured optional environment, JavaScript geometry/editor regressions, desktop and 375-pixel browser interactions, and portable package relocation. These checks do not establish new recognition accuracy; see [validation scope](docs/QUALITY.md).
 - 中文：新增四工作区布局、照片大画布与可折叠检查面板，集中保存入口；切换不提交未完成标注，不改变模型和识别算法。[布局使用指南](docs/layout-guide.md)。
 
+### 2026-10-03 CI follow-up
+
+- Create missing parent directories for synthetic photo-validation output in a fresh checkout. The photo tests had passed; validation stopped before rendering because the ignored `evaluation/` parent was absent. Keep all numerical acceptance thresholds unchanged.
+
 ## 1.1.0-dev.3 · 2026-10-02 (local development, unpublished)
 
 The public release remains v1.0.1. The accompanying standalone skill version is 2.1.0-dev.3.

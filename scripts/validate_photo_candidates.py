@@ -8,7 +8,7 @@ p=argparse.ArgumentParser();p.add_argument('--out',type=pathlib.Path,default=roo
 from atlas.core import build
 from atlas.images import from_photos
 from atlas.project import source_hash
-bank=json.loads((root/'examples/reference-atlas.json').read_text());out=args.out;out.mkdir(exist_ok=True);rows=[];fingerprint=source_hash();rng=np.random.default_rng(20260922)
+bank=json.loads((root/'examples/reference-atlas.json').read_text());out=args.out;out.mkdir(parents=True,exist_ok=True);rows=[];fingerprint=source_hash();rng=np.random.default_rng(20260922)
 for spec in bank:
  m,_=build(spec);V=np.array(m['vertices']);radius=np.linalg.norm(V,axis=1).max();D=8*radius
  for j in range(2):
