@@ -12,16 +12,30 @@ def main():
  b=sub.add_parser('build');b.add_argument('input',type=pathlib.Path);b.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'))
  v=sub.add_parser('validate');v.add_argument('model',type=pathlib.Path)
  f=sub.add_parser('fit');f.add_argument('input',type=pathlib.Path);f.add_argument('annotation',type=pathlib.Path);f.add_argument('--image',type=pathlib.Path);f.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'))
+ photo=sub.add_parser('from-photos');photo.add_argument('images',type=pathlib.Path,nargs='+');photo.add_argument('--hints',type=pathlib.Path,help='可选JSON: boxes、已确认constraints、evidence形态备选/完整性');photo.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'))
  sub.add_parser('doctor')
+ edit=sub.add_parser('editor',help='执行本地编辑/参数解析 JSON 请求');edit.add_argument('request',type=pathlib.Path);edit.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'))
+ for command in ('editor-export','review-export','review-check','photo-align'):
+  tool=sub.add_parser(command,help='本地编辑器导出或复核协议');tool.add_argument('request',type=pathlib.Path);tool.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'))
  s=sub.add_parser('serve');s.add_argument('--out',type=pathlib.Path,default=pathlib.Path('atlas-runs'));s.add_argument('--port',type=int,default=0);s.add_argument('--open',action='store_true')
  m=sub.add_parser('mcp');m.add_argument('--out',type=pathlib.Path,default=pathlib.Path(os.environ.get('PLUGIN_DATA',str(pathlib.Path.home()/'.mineral-atlas')))/'runs')
  a=p.parse_args()
  try:
   if a.command=='build':r=build_project(json.loads(a.input.read_text(encoding='utf-8')),a.out)
   elif a.command=='validate':
-   r=validate(json.loads(a.model.read_text(encoding='utf-8')))
+   from atlas.service import execute
+   r=execute('atlas_validate',{'model':json.loads(a.model.read_text(encoding='utf-8'))},None)
    if not r['ok']:print(json.dumps(r,ensure_ascii=False,indent=2));return 1
   elif a.command=='doctor':r=doctor()
+  elif a.command in ('editor','editor-export','review-export','review-check','photo-align'):
+   from atlas.service import execute
+   r=execute('atlas_'+a.command.replace('-','_'),json.loads(a.request.read_text(encoding='utf-8')),a.out)
+  elif a.command=='from-photos':
+   from atlas.service import execute
+   args=json.loads(a.hints.read_text(encoding='utf-8')) if a.hints else {}
+   args['images']=[base64.b64encode(p.read_bytes()).decode() for p in a.images]
+   result=execute('atlas_from_photos',args,a.out)
+   r={'record':result['record_path'],'warnings':result['warnings'],'performance':result['performance'],'analysis':result['analysis'],'fusion':result['fusion'],'candidates':[{'template_id':c['template_id'],'score':c['score'],'artifact':c['artifact']} for c in result['candidates']]}
   elif a.command=='fit':
    from atlas.service import execute
    args={'spec':json.loads(a.input.read_text()),'annotation':json.loads(a.annotation.read_text())}

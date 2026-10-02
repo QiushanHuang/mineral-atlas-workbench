@@ -1,5 +1,25 @@
 # 质量、速度与验证边界
 
+## main 开发版 1.1.0-dev.4 · 2026-10-02
+
+以下是本地已完成的检查；跨平台 CI 以[当前提交的 GitHub Actions](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml)为准。
+
+|检查|结果与范围|
+|---|---|
+|Python|配置好的可选图像环境中128项通过，0跳过、0失败；覆盖几何、编辑、轴定义、标注、面区候选、对齐及复核协议|
+|JavaScript|15模型／226面旋转缩放和指数往返，以及历史、吸附、绘制、修正和工作区导航回归通过|
+|界面操作|1156×959桌面及375×812窄屏检查；无页面横向溢出，窄屏侧栏折叠；切换保留未完成点，保存有提示；轴点选返回表单后需显式应用|
+|实物示例|公开451照片中，面候选采纳／撤销、重新拉线／撤销、当前模型线框对齐可操作；拟合误差不作为独立精度|
+|可移植包|系统Python验证校验和、中文与空格目录搬迁、软件／skill几何一致、干净包重建及14工具stdio MCP启动|
+
+实际页面见[桌面截图](../assets/editor-photo-workspace.png)、[窄屏截图](../assets/editor-photo-mobile.png)与[操作指南](layout-guide.md)。测试脚本位于`tests/`、`scripts/run_js_checks.py`和`scripts/verify_release.py`。照片批量回归的结果与已见数据限制见[识别改进记录](recognition-improvements-2026-10-02.md)。
+
+这是有限功能检查，没有真实移动设备、完整屏幕阅读器／无障碍验收，也没有新的独立照片真值或云端视觉精度验证。旧15模型、已见68张开发照片和公开451人工边界分别衡量不同问题，不合并为“识别准确率”。
+
+**English:** The `main` development version passed 128 Python tests with no skips in the configured optional environment, the geometry/editor JavaScript regressions, desktop and 375-pixel browser checks, and portable-package checks. The public 451 example exercised face proposals, line editing, undo and current-model alignment. These are bounded functionality checks, not independent crystallographic accuracy, physical-device coverage or a complete accessibility audit. Current cross-platform status is reported by the commit's GitHub Actions run.
+
+## 历史基准：1.0.0
+
 版本1.0.0；2026-09-20。基准测量时的程序指纹：`b42aac01d46064162c324b86a2d2c2adc18bee8a1394e216b557ec9ecb059fd3`。
 
 ## 已执行

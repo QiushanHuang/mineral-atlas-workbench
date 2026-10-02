@@ -8,3 +8,10 @@ with tempfile.TemporaryDirectory() as d:
  p=pathlib.Path(d)/'models.json';p.write_text(json.dumps({s['id']:build(s)[0] for s in json.loads((ROOT/'examples/reference-atlas.json').read_text(encoding="utf-8"))}), encoding="utf-8")
  subprocess.run([node,str(ROOT/'tests/rotation_scale.cjs'),str(ROOT/'templates/viewer.js'),str(p)],check=True)
  subprocess.run([node,'--check',str(ROOT/'ui/workbench.js')],check=True)
+
+for script in ('editor-state.js','editor-canvas.js','editor-snap.js','editor-experience.js','editor-navigation.js','editor.js'):
+ subprocess.run([node,'--check',str(ROOT/'ui'/script)],check=True)
+subprocess.run([node,str(ROOT/'tests/editor_state.cjs')],check=True)
+
+for check in ('editor_snap.cjs','editor_experience.cjs','editor_correction.cjs','editor_navigation.cjs'):
+ subprocess.run([node,str(ROOT/'tests'/check)],check=True)

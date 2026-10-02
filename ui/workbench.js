@@ -42,4 +42,65 @@ $('build').onclick=()=>busy($('build'),async()=>{sync();status('正在构形并�
 $('fit').onclick=()=>busy($('fit'),async()=>{if(!image||!model)throw Error('请先生成模型并选择照片');sync();if(JSON.stringify(spec)!==currentModelSpec)throw Error('参数已改变，请先重新生成模型');status('正在本机配准相机姿态…');const result=await api('/api/fit',{spec,annotation:annotation(),image:imageData});fitView=result.view;$('fitQuality').textContent=JSON.stringify(result.quality,null,2);if(result.artifact)await showRun(result.artifact);draw();status(result.quality.ambiguity?'配准存在多个近似解；请用另一视角或编号消歧。':'配准完成，请核对未参与拟合的棱与其他照片。');});
 for(const [id,path] of [['inspect','/api/inspect'],['ocr','/api/ocr'],['vision','/api/vision']])$(id).onclick=()=>busy($(id),async()=>{if(!imageData)throw Error('请先选择照片');status('正在本机处理图像…');const result=await api(path,{image:imageData,model_name:$('visionModel').value,language:'eng'});$('suggestions').textContent=JSON.stringify(result,null,2);status('图像工具返回了待核对结果；没有更改模型参数。');});
 new ResizeObserver(draw).observe($('photoCanvas'));
-(async()=>{try{[config,examples]=await Promise.all([fetch('/api/config').then(r=>r.json()),fetch('/api/examples').then(r=>r.json())]);$('example').innerHTML=examples.map((s,i)=>`<option value="${i}">${escapeHTML(s.id+' · '+s.title)}</option>`).join('');spec=structuredClone(examples[0]);renderSpec();$('doctor').textContent=JSON.stringify(config.doctor);$('fit').disabled=!config.doctor.fit;$('fit').title=config.doctor.fit?'':'当前Python缺少NumPy/SciPy；仍可使用核心建模与报告';$('ocr').disabled=!config.doctor.tesseract;status('离线核心已就绪。'+(config.doctor.fit?'相机拟合可用。':'可选相机拟合依赖尚未安装。'));draw();}catch(e){status('无法连接本机服务：'+e.message,true);}})();
+(async()=>{try{[config,examples]=await Promise.all([fetch('/api/config').then(r=>r.json()),fetch('/api/examples').then(r=>r.json())]);$('example').innerHTML=examples.map((s,i)=>`<option value="${i}">${escapeHTML(s.id+' · '+s.title)}</option>`).join('');spec=structuredClone(examples[0]);renderSpec();$('doctor').textContent=JSON.stringify(config.doctor);$('fit').disabled=!config.doctor.fit;$('fit').title=config.doctor.fit?'':'当前Python缺少NumPy/SciPy；仍可使用核心建模与报告';$('ocr').disabled=!config.doctor.tesseract;$('generateCandidates').disabled=!config.doctor.photo_candidates;if(!config.doctor.photo_candidates)$('candidateStatus').textContent='当前Python缺少照片算法依赖，请配置requirements-photo.lock';status('离线核心已就绪。'+(config.doctor.fit?'相机拟合可用。':'可选相机拟合依赖尚未安装。'));draw();}catch(e){status('无法连接本机服务：'+e.message,true);}})();
+
+let candidateImages=[],candidateResult=null,candidateEpoch=0,candidateLoading=false;
+function coverageControl(i,value='unknown'){
+ return `<label>这张照片<select data-coverage="${i}">${[['unknown','完整性不确定'],['complete','物体完整可见'],['partial','有遮挡或残缺']].map(([v,t])=>`<option value="${v}" ${v===value?'selected':''}>${t}</option>`).join('')}</select></label>`;
+}
+$('candidatePhotos').onchange=async event=>{
+ const epoch=++candidateEpoch;candidateImages=[];candidateResult=null;$('generateCandidates').disabled=true;
+ $('candidateResults').replaceChildren();$('candidateWarnings').hidden=true;$('saveCandidates').hidden=true;$('evidenceAnalysis').hidden=true;
+ try{
+  const files=[...event.target.files];if(!files.length)return;
+  const policy=config.photo_policy||{max_photos:24,max_total_bytes:64*1024*1024};
+  if(files.length>policy.max_photos||files.reduce((n,f)=>n+f.size,0)>policy.max_total_bytes)throw Error('请选择1–24张照片，合计不超过64MiB');
+  $('candidateStatus').textContent='正在读取照片…';
+  const loaded=await Promise.all(files.map(read));if(epoch!==candidateEpoch)return;candidateImages=loaded;
+  $('photoInputs').innerHTML=candidateImages.map((data,i)=>`<figure><img src="${data}" alt="输入照片${i+1}"><figcaption>照片 ${i+1}</figcaption>${coverageControl(i)}</figure>`).join('');
+  $('candidateStatus').textContent=`已选择${files.length}张照片`;
+ }catch(e){status(e.message,true);$('candidateStatus').textContent='照片未载入，请重新选择';}
+ finally{if(epoch===candidateEpoch)$('generateCandidates').disabled=!config?.doctor?.photo_candidates||!candidateImages.length;}
+};
+function residualSummary(candidate){
+ const groups=[['symmetric_outline_rmse','双向轮廓偏差'],['clipped_one_sided_outline','局部截断评分（仅排序）']];
+ return groups.map(([metric,label])=>{const rows=candidate.per_photo.filter(p=>p?.metric===metric);return rows.length?`${label} ${(100*rows.reduce((n,p)=>n+p.normalized_silhouette_rmse,0)/rows.length).toFixed(2)}%`:'';}).filter(Boolean).join('；');
+}
+$('generateCandidates').onclick=()=>busy($('generateCandidates'),async()=>{
+ if(!candidateImages.length)throw Error('请先选择同一物体的照片');
+ const requestImages=[...candidateImages],epoch=++candidateEpoch;
+ const locked=[...document.querySelectorAll('#photoStart input,#photoStart select,#photoStart textarea')].map(element=>[element,element.disabled]);locked.forEach(([element])=>element.disabled=true);
+ try{
+ const constraints={};if($('candidateSystem').value)constraints.crystal_system=$('candidateSystem').value;
+ if($('candidateCount').value)constraints.expected_faces=Number($('candidateCount').value);
+ const boxes=$('candidateBoxes').value.trim()?JSON.parse($('candidateBoxes').value):undefined;
+ $('candidateStatus').textContent='正在本机提取轮廓并比较候选…';status('正在生成照片候选，请稍候…');
+ const evidence={morphology:$('candidateMorphology').value,strength:$('morphologyStrength').value,coverage:[...$('photoInputs').querySelectorAll('select[data-coverage]')].map(element=>element.value)};
+ const r=await api('/api/from-photos',{images:requestImages,boxes,constraints,evidence});if(epoch!==candidateEpoch)return;candidateResult=r;
+ $('photoInputs').innerHTML=r.observations.map((o,i)=>{
+  const group=r.fusion.groups.findIndex(g=>g.members.includes(i));
+  return `<figure><img src="${o.preview||requestImages[i]}" alt="照片${i+1}的处理结果"><figcaption>照片 ${i+1} · ${o.status==='unusable'?'未参与排序':`视角组${group+1} · 组权重 ${r.fusion.groups[group].effective_weight.toFixed(2)}`}<br>${escapeHTML(o.warnings.filter(w=>!w.startsWith('自动物体定位')).join('；'))}</figcaption>${coverageControl(i,o.input_coverage||'unknown')}</figure>`;
+ }).join('');
+ const parsed=r.morphology.parsed,analysis=r.analysis,loo=r.fusion.leave_one_group_out;
+ $('evidenceAnalysis').innerHTML=`<h3>证据与不确定项</h3><p>${r.performance.photos}张输入，${r.performance.usable_photos}张可用，合并为${r.fusion.independent_views}组；${r.fusion.redundant_photos}张重复或高度相似。</p><p>形态原文：${escapeHTML(parsed.raw||'未提供')}<br>识别到的线索：${escapeHTML(parsed.matched.join('、')||'无')}<br>未理解的片段：${escapeHTML(parsed.unparsed||'无')}</p><p>${loo.length?`去掉一组视角后，首选保持 ${r.fusion.winner_stable_count}/${loo.length} 次；这不是正确率。`:'有效视角组不足3组，暂不计算删一组稳定性。'}${analysis.prior_changed_winner?'形态软提示改变了首选，请同时核对图像依据。':''}</p><p>冲突照片：${r.fusion.conflicting_photos.map(i=>i+1).join('、')||'未检出'}；未采用照片：${analysis.excluded_photos.map(i=>i+1).join('、')||'无'}。</p><ul>${analysis.next_observations.map(t=>`<li>${escapeHTML(t)}</li>`).join('')}</ul>`;
+ $('evidenceAnalysis').hidden=false;
+ $('candidateWarnings').textContent=r.warnings.join(' ');$('candidateWarnings').hidden=false;
+ $('candidateResults').innerHTML=r.candidates.map((c,i)=>`<article class="candidate"><h3>候选 ${i+1} · ${escapeHTML(c.template_id)}</h3><p>${escapeHTML(c.title)}</p><p class="muted">${residualSummary(c)} · 不是识别置信度</p><p class="muted">融合图像得分 ${c.image_score.toFixed(4)} · 形态不符惩罚 ${c.morphology_penalty.toFixed(4)}</p><iframe title="候选${i+1}的交互3D预览" src="/runs/${encodeURIComponent(c.artifact.run_id)}/index.html?compact=1"></iframe><div class="row"><button class="primary" data-candidate="${i}">载入此候选继续核对</button><a target="_blank" rel="noopener" href="/runs/${encodeURIComponent(c.artifact.run_id)}/index.html">独立查看</a></div></article>`).join('');
+ $('candidateResults').querySelectorAll('button[data-candidate]').forEach(button=>button.onclick=()=>busy(button,async()=>{
+  if(candidateLoading)return;candidateLoading=true;
+  let controls=[];
+  try{
+  const c=r.candidates[Number(button.dataset.candidate)];spec=structuredClone(c.spec);renderSpec();
+  controls=[...document.querySelectorAll('button,input,select,textarea')].map(element=>[element,element.disabled]);controls.forEach(([element])=>element.disabled=true);
+  await showRun(c.artifact);
+  const photoIndex=c.representative_photo;imageData=requestImages[photoIndex];await new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{image=im;imageSize=[im.naturalWidth,im.naturalHeight];resolve();};im.onerror=reject;im.src=imageData;});
+  silhouette=r.observations[photoIndex].silhouette;points=[];centers={};holdout=[];fitView=c.views[photoIndex];$('fitQuality').textContent='候选视角来自自动外轮廓。请先确认面编号，再标注角点进行精修。';draw();status('已载入初始候选；面号和晶体学参数仍是待核对先验。');$('preview').scrollIntoView({behavior:'smooth',block:'start'});
+  }finally{controls.forEach(([element,disabled])=>element.disabled=disabled);candidateLoading=false;}
+ }));
+ $('saveCandidates').hidden=false;$('candidateStatus').textContent=`${r.performance.photos}张照片 / ${r.fusion.independent_views}组视角 · ${r.performance.templates}种参考形态 · ${r.performance.elapsed_seconds.toFixed(1)}秒`;
+ status('候选已生成。请先检查分割轮廓，再选择合适的3D候选。');
+ }finally{locked.forEach(([element,disabled])=>element.disabled=disabled);}
+});
+$('saveCandidates').onclick=()=>{if(candidateResult)download('photo-candidates.json',candidateResult);};
+
+$('editCurrentModel').onclick=()=>{sync();sessionStorage.setItem('mineral-atlas-edit-spec',JSON.stringify(spec));location.href='editor.html';};

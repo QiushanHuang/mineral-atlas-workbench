@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source-bound manual photo evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "image_size",
+    "source_sha256",
+    "features"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "image_size": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "integer",
+          "minimum": 1
+        }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "features": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "points"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"
+          },
+          "kind": {
+            "enum": [
+              "edge",
+              "silhouette",
+              "face",
+              "occlusion",
+              "uncertain"
+            ]
+          },
+          "face_id": {
+            "type": "string",
+            "pattern": "^F[0-9]{2,3}$"
+          },
+          "model_fingerprint": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "points": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 128,
+            "uniqueItems": true,
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 2000
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "silhouette",
+                    "face",
+                    "occlusion"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "points": {
+                  "minItems": 3
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$comment": "The Python validator additionally checks the actual image SHA256 and EXIF display size, coordinate bounds, unique feature IDs, one silhouette, non-self-intersecting polygon area and a 2048-point total. Face IDs are unverified associations."
+}

@@ -1,0 +1,925 @@
+{
+  "date": "2026-09-26",
+  "status": "local_validation_unreleased",
+  "engine": "photo-evidence-series-v2",
+  "real_photo_ablation": {
+    "source_sha256": "4ec28106d41881df364c933ff0393d2f1de1577729b1a1cd99275604e64b2f6a",
+    "scope": "68 prior development photos; fixed manifest order; reuse identical image fits for fair fusion comparisons",
+    "fit_records_reused": false,
+    "hint_scope": "Explicit uncertain prior descriptions declared before evaluation; not automatic morphology recognition",
+    "total_photos": 68,
+    "models": 14,
+    "rows": [
+      {
+        "model": "128",
+        "photos": 8,
+        "usable": 8,
+        "independent_views": 8,
+        "hint": "柱状或长方体，局部看不清",
+        "top3": [
+          "128",
+          "3519",
+          "333"
+        ],
+        "rank": 1,
+        "seconds": 7.194111249998969,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 7,
+        "loo_count": 8
+      },
+      {
+        "model": "333",
+        "photos": 5,
+        "usable": 5,
+        "independent_views": 5,
+        "hint": "柱状或锥状，信息不完整",
+        "top3": [
+          "333",
+          "3519",
+          "439"
+        ],
+        "rank": 1,
+        "seconds": 4.206112708998262,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 5,
+        "loo_count": 5
+      },
+      {
+        "model": "511",
+        "photos": 5,
+        "usable": 5,
+        "independent_views": 5,
+        "hint": "四方柱或四方锥",
+        "top3": [
+          "333",
+          "3519",
+          "511"
+        ],
+        "rank": 3,
+        "seconds": 3.6946281249984168,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 1,
+        "loo_count": 5
+      },
+      {
+        "model": "722",
+        "photos": 6,
+        "usable": 6,
+        "independent_views": 6,
+        "hint": "可能五角十二面体或八面体",
+        "top3": [
+          "722",
+          "758",
+          "7518"
+        ],
+        "rank": 1,
+        "seconds": 4.455211958000291,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 6,
+        "loo_count": 6
+      },
+      {
+        "model": "5518",
+        "photos": 6,
+        "usable": 6,
+        "independent_views": 6,
+        "hint": "四方柱或双锥组合",
+        "top3": [
+          "5518",
+          "3519",
+          "333"
+        ],
+        "rank": 1,
+        "seconds": 4.456709167003282,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 6,
+        "loo_count": 6
+      },
+      {
+        "model": "7518",
+        "photos": 6,
+        "usable": 6,
+        "independent_views": 6,
+        "hint": "八面体或多面体组合",
+        "top3": [
+          "7518",
+          "758",
+          "511"
+        ],
+        "rank": 1,
+        "seconds": 4.439634375001333,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 6,
+        "loo_count": 6
+      },
+      {
+        "model": "3519",
+        "photos": 5,
+        "usable": 5,
+        "independent_views": 5,
+        "hint": "长方体或柱状",
+        "top3": [
+          "333",
+          "3519",
+          "439"
+        ],
+        "rank": 2,
+        "seconds": 4.2229985000012675,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 3,
+        "loo_count": 5
+      },
+      {
+        "model": "2522",
+        "photos": 5,
+        "usable": 5,
+        "independent_views": 5,
+        "hint": "三方柱或截尖锥",
+        "top3": [
+          "128",
+          "3519",
+          "2522"
+        ],
+        "rank": 3,
+        "seconds": 4.1443372089997865,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 3,
+        "loo_count": 5
+      },
+      {
+        "model": "439",
+        "photos": 5,
+        "usable": 5,
+        "independent_views": 5,
+        "hint": "三方柱或三方锥组合",
+        "top3": [
+          "439",
+          "333",
+          "3519"
+        ],
+        "rank": 1,
+        "seconds": 3.649902208999265,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 5,
+        "loo_count": 5
+      },
+      {
+        "model": "451",
+        "photos": 3,
+        "usable": 3,
+        "independent_views": 3,
+        "hint": "菱面体或倾斜柱状",
+        "top3": [
+          "451",
+          "333",
+          "611"
+        ],
+        "rank": 1,
+        "seconds": 2.609461125000962,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 2,
+        "loo_count": 3
+      },
+      {
+        "model": "611",
+        "photos": 4,
+        "usable": 4,
+        "independent_views": 4,
+        "hint": "六方双锥或六方柱，端部信息不完整",
+        "top3": [
+          "611",
+          "333",
+          "439"
+        ],
+        "rank": 1,
+        "seconds": 2.8396053329997812,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 4,
+        "loo_count": 4
+      },
+      {
+        "model": "6512",
+        "photos": 4,
+        "usable": 4,
+        "independent_views": 4,
+        "hint": "六方柱或六方双锥",
+        "top3": [
+          "439",
+          "333",
+          "3519"
+        ],
+        "rank": 6,
+        "seconds": 2.6450385830030427,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 4,
+        "loo_count": 4
+      },
+      {
+        "model": "671",
+        "photos": 3,
+        "usable": 3,
+        "independent_views": 3,
+        "hint": "三方柱或三方双锥",
+        "top3": [
+          "671",
+          "2522",
+          "439"
+        ],
+        "rank": 1,
+        "seconds": 2.730869625000196,
+        "excluded": [],
+        "conflicts": [],
+        "stable": 2,
+        "loo_count": 3
+      },
+      {
+        "model": "675",
+        "photos": 3,
+        "usable": 3,
+        "independent_views": 3,
+        "hint": "三方双锥或三方锥",
+        "top3": [
+          "675",
+          "439",
+          "333"
+        ],
+        "rank": 1,
+        "seconds": 2.7657936670002528,
+        "excluded": [],
+        "conflicts": [
+          1
+        ],
+        "stable": 2,
+        "loo_count": 3
+      }
+    ],
+    "curves": [
+      {
+        "model": "128",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "128",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "128",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "128",
+        "views": "all",
+        "input_photos": 8,
+        "independent_views": 8,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "333",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "333",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "333",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "333",
+        "views": "all",
+        "input_photos": 5,
+        "independent_views": 5,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "511",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 9,
+        "robust_rank": 9,
+        "hinted_rank": 9,
+        "status": "ok"
+      },
+      {
+        "model": "511",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 11,
+        "robust_rank": 11,
+        "hinted_rank": 10,
+        "status": "ok"
+      },
+      {
+        "model": "511",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 7,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "511",
+        "views": "all",
+        "input_photos": 5,
+        "independent_views": 5,
+        "mean_rank": 9,
+        "robust_rank": 3,
+        "hinted_rank": 3,
+        "status": "ok"
+      },
+      {
+        "model": "722",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "722",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "722",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "722",
+        "views": "all",
+        "input_photos": 6,
+        "independent_views": 6,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "5518",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "5518",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "5518",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "5518",
+        "views": "all",
+        "input_photos": 6,
+        "independent_views": 6,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "7518",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "7518",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "7518",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "7518",
+        "views": "all",
+        "input_photos": 6,
+        "independent_views": 6,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "3519",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "3519",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "3519",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 2,
+        "status": "ok"
+      },
+      {
+        "model": "3519",
+        "views": "all",
+        "input_photos": 5,
+        "independent_views": 5,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 2,
+        "status": "ok"
+      },
+      {
+        "model": "2522",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 2,
+        "status": "ok"
+      },
+      {
+        "model": "2522",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "2522",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 3,
+        "robust_rank": 3,
+        "hinted_rank": 3,
+        "status": "ok"
+      },
+      {
+        "model": "2522",
+        "views": "all",
+        "input_photos": 5,
+        "independent_views": 5,
+        "mean_rank": 5,
+        "robust_rank": 5,
+        "hinted_rank": 3,
+        "status": "ok"
+      },
+      {
+        "model": "439",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 5,
+        "robust_rank": 5,
+        "hinted_rank": 3,
+        "status": "ok"
+      },
+      {
+        "model": "439",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 4,
+        "robust_rank": 4,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "439",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "439",
+        "views": "all",
+        "input_photos": 5,
+        "independent_views": 5,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "451",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 3,
+        "robust_rank": 3,
+        "hinted_rank": 3,
+        "status": "ok"
+      },
+      {
+        "model": "451",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 2,
+        "hinted_rank": 2,
+        "status": "ok"
+      },
+      {
+        "model": "451",
+        "views": "all",
+        "input_photos": 3,
+        "independent_views": 3,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "611",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "611",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "611",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "611",
+        "views": "all",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "6512",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 6,
+        "robust_rank": 6,
+        "hinted_rank": 6,
+        "status": "ok"
+      },
+      {
+        "model": "6512",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 8,
+        "robust_rank": 7,
+        "hinted_rank": 6,
+        "status": "ok"
+      },
+      {
+        "model": "6512",
+        "views": "4",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 8,
+        "robust_rank": 8,
+        "hinted_rank": 6,
+        "status": "ok"
+      },
+      {
+        "model": "6512",
+        "views": "all",
+        "input_photos": 4,
+        "independent_views": 4,
+        "mean_rank": 8,
+        "robust_rank": 8,
+        "hinted_rank": 6,
+        "status": "ok"
+      },
+      {
+        "model": "671",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 2,
+        "robust_rank": 2,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "671",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 3,
+        "robust_rank": 3,
+        "hinted_rank": 2,
+        "status": "ok"
+      },
+      {
+        "model": "671",
+        "views": "all",
+        "input_photos": 3,
+        "independent_views": 3,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "675",
+        "views": "1",
+        "input_photos": 1,
+        "independent_views": 1,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      },
+      {
+        "model": "675",
+        "views": "2",
+        "input_photos": 2,
+        "independent_views": 2,
+        "mean_rank": 4,
+        "robust_rank": 8,
+        "hinted_rank": 6,
+        "status": "ok"
+      },
+      {
+        "model": "675",
+        "views": "all",
+        "input_photos": 3,
+        "independent_views": 3,
+        "mean_rank": 1,
+        "robust_rank": 1,
+        "hinted_rank": 1,
+        "status": "ok"
+      }
+    ],
+    "aggregates": [
+      {
+        "views": "1",
+        "models": 14,
+        "mean_top1": 7,
+        "mean_top3": 11,
+        "robust_top1": 7,
+        "robust_top3": 11,
+        "hinted_top1": 9,
+        "hinted_top3": 12
+      },
+      {
+        "views": "2",
+        "models": 14,
+        "mean_top1": 8,
+        "mean_top3": 10,
+        "robust_top1": 7,
+        "robust_top3": 10,
+        "hinted_top1": 9,
+        "hinted_top3": 11
+      },
+      {
+        "views": "4",
+        "models": 11,
+        "mean_top1": 7,
+        "mean_top3": 9,
+        "robust_top1": 8,
+        "robust_top3": 10,
+        "hinted_top1": 8,
+        "hinted_top3": 10
+      },
+      {
+        "views": "all",
+        "models": 14,
+        "mean_top1": 10,
+        "mean_top3": 11,
+        "robust_top1": 10,
+        "robust_top3": 12,
+        "hinted_top1": 10,
+        "hinted_top3": 13
+      }
+    ],
+    "limits": [
+      "No physical 3D ground truth; ranks refer to existing library templates.",
+      "More views are not guaranteed to improve every case; failures and regressions are retained.",
+      "Soft morphology priors may be wrong or incomplete; unknown text is preserved."
+    ]
+  },
+  "synthetic_stress_reused": {
+    "source_sha256": "898f831d2e65900f058ce7d32e0b39b11bb25680df7d6f58b988b370d2ed922d",
+    "scope": "synthetic stress, four known templates; no independent physical reconstruction accuracy claim",
+    "results": [
+      {
+        "template": "611",
+        "baseline_rank": 1,
+        "repeated_rank": 1,
+        "blur_rank": 1,
+        "partial_and_uncertain_hint_rank": 1,
+        "baseline_groups": 2,
+        "repeated_groups": 2,
+        "sharp_quality": 0.9848767737117252,
+        "blur_quality": 0.33861934710991315,
+        "partial_status": "needs_review",
+        "unknown_text": "未知螺旋条纹"
+      },
+      {
+        "template": "451",
+        "baseline_rank": 1,
+        "repeated_rank": 1,
+        "blur_rank": 1,
+        "partial_and_uncertain_hint_rank": 1,
+        "baseline_groups": 2,
+        "repeated_groups": 2,
+        "sharp_quality": 0.9772465168469283,
+        "blur_quality": 0.3360097222222222,
+        "partial_status": "needs_review",
+        "unknown_text": "未知螺旋条纹"
+      },
+      {
+        "template": "7518",
+        "baseline_rank": 1,
+        "repeated_rank": 1,
+        "blur_rank": 1,
+        "partial_and_uncertain_hint_rank": 1,
+        "baseline_groups": 2,
+        "repeated_groups": 2,
+        "sharp_quality": 0.9817324690630524,
+        "blur_quality": 0.3368126754432052,
+        "partial_status": "needs_review",
+        "unknown_text": "未知螺旋条纹"
+      },
+      {
+        "template": "6512",
+        "baseline_rank": 1,
+        "repeated_rank": 1,
+        "blur_rank": 1,
+        "partial_and_uncertain_hint_rank": 1,
+        "baseline_groups": 2,
+        "repeated_groups": 2,
+        "sharp_quality": 0.9892232150503868,
+        "blur_quality": 0.3436137092735222,
+        "partial_status": "needs_review",
+        "unknown_text": "未知螺旋条纹"
+      }
+    ],
+    "assertions": "duplicates leave ranking unchanged; partial and unknown evidence stay explicit; soft priors keep all templates"
+  },
+  "stress_reuse_boundary": "Completed 2026-09-22 stress inputs are valid files and use explicit partial coverage; no algorithm effect for those inputs from the three final fixes. Automatic suspected-partial, negation and damaged-header handling separately covered by new regression tests.",
+  "integration": {
+    "unique_python_tests": 41,
+    "test_evidence": "38-test full suite + 10-test evidence suite (2 new cases) + 4-test pipeline suite (1 new large-message case); unchanged tests reused",
+    "js_models": 15,
+    "js_faces": 226,
+    "browser": "8 photographs + uncertain morphology -> 128 first candidate -> 8-face model; no console errors; image and morphology inputs locked during inference",
+    "review": "All three scoped reviewer findings fixed and independently rechecked",
+    "remote_ci": "not run; no new commit/push/release",
+    "portable_packages": "Fresh-directory integrity, clean-package rebuild, software/skill parity and actual eight-tool MCP startup passed; 25MiB MCP envelope regression passed",
+    "report_preview": "Automatic file:// report preview blocked by browser URL policy; no workaround attempted. Report file delivered without that visual-preview gate."
+  },
+  "limitations": [
+    "Closed-set development regression, not unseen-object reconstruction accuracy.",
+    "Known correct shape hints are deliberately uncertain input scenarios, not morphology recognized from pixels.",
+    "6512 remains rank6; rank stability may remain high for an incorrect template.",
+    "No calibrated 3D truth, depth, cell metric or physical index measurement."
+  ]
+}

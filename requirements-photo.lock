@@ -1,0 +1,3 @@
+# Optional photo-first pipeline; never downloaded automatically by the app.
+-r requirements-fit.lock
+opencv-python-headless==4.13.0.92

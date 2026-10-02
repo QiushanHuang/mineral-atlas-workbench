@@ -1,5 +1,11 @@
 # Releasing / 发布说明
 
+## Development source and tagged downloads
+
+`main` currently builds software **1.1.0-dev.4** and skill **2.1.0-dev.4**. The latest tagged release remains **v1.0.1**, with skill archive **2.0.1**. A source push and successful CI package job do not create a GitHub Release or replace its assets. `CITATION.cff` continues to describe the tagged release; when citing development code, also identify the exact commit.
+
+`main` 当前构建软件 **1.1.0-dev.4**、技能 **2.1.0-dev.4**；正式下载仍为 **v1.0.1** 和技能包 **2.0.1**。源码推送与 CI 打包不会自动创建 Release 或替换旧附件。引用开发代码时，应同时记录具体提交。
+
 ## Build From A Clean Checkout
 
 ```bash
@@ -10,19 +16,19 @@ python3 scripts/release.py --out dist
 python3 scripts/verify_release.py dist
 ```
 
-Run the fitting tests with the pinned optional environment as well. CI performs the core checks across macOS/Linux/Windows and uses a separate fitting job. The packaging job rebuilds from the repository's `verification/` records; it does not require a private `evaluation/` directory.
+Run the fitting tests with the pinned optional environment as well. Install `requirements-photo.lock` to test the optional image pipeline. CI performs core checks across macOS/Linux/Windows, plus separate fitting and image-pipeline jobs. The packaging job rebuilds from the repository's `verification/` records; it does not require a private `evaluation/` directory.
 
-Release outputs:
+Current development package outputs:
 
-- `mineral-atlas-workbench-1.0.1.zip`
-- `mineral-face-atlas-skill-2.0.1.zip`
+- `mineral-atlas-workbench-1.1.0-dev.4.zip`
+- `mineral-face-atlas-skill-2.1.0-dev.4.zip`
 - `release-checksums.json`
 
 The software archive is also the plugin bundle. The skill archive includes a standalone runtime. Both include the project license, author information, documentation, and logo. The explicitly authorized451 photographic example is included through examples/. All other private photographs, local interpreter preferences, caches, and development task notes remain excluded.
 
 ## Version And Publication
 
-Before the next release, update the software version consistently in `atlas/__init__.py`, `plugin.json`, `.codex-plugin/plugin.json`, `CITATION.cff`, both READMEs, `CHANGELOG.md`, and the software archive name in `scripts/release.py`. Change the standalone skill version/archive name only when its own release version changes. Update links and this document accordingly.
+Before the next tagged release, update the software version consistently in `atlas/__init__.py`, `plugin.json`, `.codex-plugin/plugin.json`, `CITATION.cff`, both READMEs and `CHANGELOG.md`. The software archive name in `scripts/release.py` is derived from `atlas.__version__`; its `SKILL_VERSION` controls the standalone skill archive. Update download links and this document accordingly.
 
 Review the staged source and archive contents, confirm CI for the commit being tagged, then create an annotated version tag and a GitHub Release. Attach both ZIPs and the checksums. Do not replace previously published assets silently; publish a new version for a material change.
 

@@ -2,6 +2,7 @@
 import sys,json,pathlib
 from . import __version__
 from .service import execute,TOOLS
+from .photo_policy import MAX_REQUEST_BYTES
 
 def run(output,instream=None,outstream=None):
  if instream is None and hasattr(sys.stdin,'reconfigure'):sys.stdin.reconfigure(encoding='utf-8')
@@ -9,10 +10,10 @@ def run(output,instream=None,outstream=None):
  inp=instream or sys.stdin;out=outstream or sys.stdout;initialized=False;version='2025-06-18'
  def send(obj):out.write(json.dumps(obj,ensure_ascii=False,allow_nan=False)+'\n');out.flush()
  while True:
-  line=inp.readline(24*1024*1024+1)
+  line=inp.readline(MAX_REQUEST_BYTES+1)
   if not line:break
-  if len(line)>24*1024*1024:
-   send({'jsonrpc':'2.0','id':None,'error':{'code':-32700,'message':'消息超过24MiB'}});break
+  if len(line.encode('utf-8'))>MAX_REQUEST_BYTES:
+   send({'jsonrpc':'2.0','id':None,'error':{'code':-32700,'message':'消息超过96MiB'}});break
   try:
    req=json.loads(line)
    if not isinstance(req,dict) or req.get('jsonrpc')!='2.0' or not isinstance(req.get('method'),str):raise ValueError()

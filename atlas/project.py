@@ -2,6 +2,7 @@
 import json,hashlib,pathlib,tempfile,os,shutil,platform,time,html,zipfile,threading
 from . import __version__
 from .core import build,validate
+from .photo_policy import MAX_PHOTOS
 from .point_groups import CATALOGUE,appendix,reference_page
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 LOCK=threading.Lock()
@@ -9,8 +10,8 @@ def canonical(data):return json.dumps(data,ensure_ascii=False,sort_keys=True,sep
 def sha(data):return hashlib.sha256(data).hexdigest()
 def write_json(path,data):path.write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
 def source_hash():
- files=sorted((ROOT/'atlas').glob('*.py'))+sorted((ROOT/'atlas').glob('*.json'))+sorted((ROOT/'templates').glob('*'))+[ROOT/'assets/logo.png',ROOT/'LICENSE']
- return sha(b''.join(p.name.encode()+p.read_bytes() for p in files))
+ files=sorted((ROOT/'atlas').glob('*.py'))+sorted((ROOT/'atlas').glob('*.json'))+sorted((ROOT/'atlas').glob('*.txt'))+sorted((ROOT/'templates').glob('*'))+sorted((ROOT/'schema').glob('*.json'))+sorted((ROOT/'ui').glob('editor*'))+[ROOT/'assets/logo.png',ROOT/'LICENSE']
+ return sha(b''.join(str(p.relative_to(ROOT)).encode()+p.read_bytes() for p in files))
 LOADED_SOURCE_HASH=source_hash()
 def require_current_source():
  if source_hash()!=LOADED_SOURCE_HASH:raise ValueError('程序文件已改变，请重启工作台后再生成，避免混用代码版本')
@@ -43,10 +44,18 @@ def build_project(spec,output,attachment=None):
   try:
    photos=[];views=[]
    if attachment:
-    from .images import decode_image
-    raw,ext=decode_image(attachment['image']);(tmp/('photo'+ext)).write_bytes(raw);photos=[{'number':1,'path':'photo'+ext}]
-    if attachment.get('view'):
-     view=attachment['view'];views=[dict(view,photo=1)]
+    from .images import decode_image,decode_photo_input
+    items=attachment.get('items',[attachment])
+    if not isinstance(items,list) or not 1<=len(items)<=MAX_PHOTOS:raise ValueError(f'结果包支持1–{MAX_PHOTOS}张照片')
+    for number,item in enumerate(items,1):
+     if item.get('annotation',{}).get('status')=='unusable':raw,ext,_=decode_photo_input(item['image'])
+     else:raw,ext=decode_image(item['image'])
+     name=('photo' if len(items)==1 else 'photo-'+str(number))+ext
+     (tmp/name).write_bytes(raw);photos.append({'number':number,'path':name})
+     if item.get('view'):views.append(dict(item['view'],photo=number))
+    if 'items' in attachment:
+     write_json(tmp/'views.json',views)
+     write_json(tmp/'photo-evidence.json',[{k:v for k,v in item.items() if k!='image'} for item in items])
    data={'models':{spec['id']:model},'views':{spec['id']:views},'photos':{spec['id']:photos}}
    write_json(tmp/'input.json',spec);write_json(tmp/'model.json',model);write_json(tmp/'quality.json',quality)
    if attachment and attachment.get('view'):

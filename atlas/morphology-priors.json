@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "Shape-library hypotheses for user-supplied descriptions; not measured mineral crystal forms",
+  "models": {
+    "128": {"forms":["prism","box"],"orders":[2,4,6],"section_sides":6,"habits":["elongated"],"ends":["flat","beveled"]},
+    "333": {"forms":["prism","pyramid"],"orders":[2,4,8],"section_sides":8,"habits":["elongated"],"ends":["pointed","beveled"]},
+    "511": {"forms":["prism","pyramid"],"orders":[4],"section_sides":4,"habits":["elongated"],"ends":["flat","beveled"]},
+    "722": {"forms":["pyritohedron","dodecahedron"],"orders":[],"habits":["equant"],"ends":[]},
+    "5518": {"forms":["prism","dipyramid"],"orders":[4,8],"section_sides":8,"habits":["elongated"],"ends":["flat","beveled","truncated"]},
+    "7518": {"forms":["octahedron"],"orders":[3,4],"habits":["equant"],"ends":["pointed","beveled"]},
+    "758": {"forms":["cube","octahedron"],"orders":[4],"habits":["equant"],"ends":["flat","beveled"]},
+    "3519": {"forms":["box","prism"],"orders":[2,4,8],"section_sides":8,"habits":["elongated"],"ends":["flat","beveled"]},
+    "2522": {"forms":["prism"],"orders":[3],"section_sides":3,"habits":["elongated"],"ends":["flat","beveled"]},
+    "439": {"forms":["prism","pyramid"],"orders":[3,6,9],"section_sides":9,"habits":["elongated"],"ends":["pointed","flat","truncated"]},
+    "451": {"forms":["rhombohedron"],"orders":[3],"habits":["equant","elongated"],"ends":[]},
+    "611": {"forms":["dipyramid","prism"],"orders":[6],"section_sides":6,"habits":["elongated"],"ends":["truncated","flat"]},
+    "6512": {"forms":["prism","dipyramid"],"orders":[6],"section_sides":6,"habits":["equant"],"ends":["truncated","flat","beveled"]},
+    "671": {"forms":["prism"],"orders":[3],"section_sides":3,"habits":["elongated"],"ends":["flat"]},
+    "675": {"forms":["dipyramid","pyramid"],"orders":[3],"section_sides":3,"habits":["platy","equant"],"ends":["truncated","flat"]},
+    "cube": {"forms":["cube","box","prism"],"orders":[4],"section_sides":4,"habits":["equant"],"ends":["flat"]}
+  }
+}

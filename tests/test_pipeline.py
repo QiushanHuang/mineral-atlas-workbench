@@ -9,10 +9,16 @@ class Pipeline(unittest.TestCase):
   with tempfile.TemporaryDirectory(prefix='atlas portable space ') as d:
    r=build_project(CUBE,d);p=pathlib.Path(r['path']);self.assertFalse(r['cached']);self.assertTrue((p/'result.zip').exists());self.assertTrue(build_project(CUBE,d)['cached'])
    original=(p/'model.json').read_bytes();(p/'model.json').write_text('{}', encoding="utf-8");next=build_project(CUBE,d);self.assertNotEqual(next['path'],r['path']);self.assertEqual((pathlib.Path(next['path'])/'model.json').read_bytes(),original)
+ def test_mcp_large_photo_request_envelope(self):
+  # A real JSON-RPC envelope larger than the former 24MiB cap, still below the 64MiB-photo transport budget.
+  reqs=[{'jsonrpc':'2.0','id':1,'method':'initialize','params':{'protocolVersion':'2025-06-18'}},{'jsonrpc':'2.0','id':2,'method':'ping','params':{'padding':'x'*(25*1024*1024)}}]
+  with tempfile.TemporaryDirectory() as d:
+   out=io.StringIO();run(d,io.StringIO('\n'.join(json.dumps(r) for r in reqs)),out)
+   last=json.loads(out.getvalue().splitlines()[-1]);self.assertEqual(last.get('id'),2);self.assertIn('result',last)
  def test_mcp_roundtrip(self):
   reqs=[{'jsonrpc':'2.0','id':1,'method':'initialize','params':{'protocolVersion':'2025-06-18'}},{'jsonrpc':'2.0','method':'notifications/initialized'},{'jsonrpc':'2.0','id':2,'method':'tools/list'},{'jsonrpc':'2.0','id':3,'method':'tools/call','params':{'name':'atlas_build','arguments':{'spec':CUBE}}},{'jsonrpc':'2.0','id':4,'method':'tools/call','params':{'name':'atlas_build','arguments':{'spec':{}}}}]
   with tempfile.TemporaryDirectory() as d:
-   out=io.StringIO();run(d,io.StringIO('\n'.join(json.dumps(r) for r in reqs)),out);res=[json.loads(x) for x in out.getvalue().splitlines()];self.assertEqual(len(res),4);self.assertEqual(len(res[1]['result']['tools']),7);self.assertFalse(res[2]['result']['isError']);self.assertTrue(res[3]['result']['isError'])
+   out=io.StringIO();run(d,io.StringIO('\n'.join(json.dumps(r) for r in reqs)),out);res=[json.loads(x) for x in out.getvalue().splitlines()];self.assertEqual(len(res),4);self.assertEqual({t['name'] for t in res[1]['result']['tools']},{'atlas_build','atlas_validate','atlas_fit','atlas_doctor','atlas_inspect_image','atlas_ocr','atlas_vision','atlas_from_photos','atlas_editor','atlas_editor_export','atlas_review_export','atlas_review_check','atlas_photo_annotations','atlas_photo_align'});self.assertFalse(res[2]['result']['isError']);self.assertTrue(res[3]['result']['isError'])
  def test_http_tokens_paths_and_build(self):
   with tempfile.TemporaryDirectory() as d:
    server=make_server(d);t=threading.Thread(target=server.serve_forever,daemon=True);t.start();base=f'http://127.0.0.1:{server.server_port}'

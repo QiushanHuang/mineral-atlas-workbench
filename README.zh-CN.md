@@ -6,7 +6,8 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![工作流](https://img.shields.io/badge/Workflow-Offline%20%7C%20CLI%20%7C%20MCP-0f766e)](#三种使用方式)
 [![晶面指数](https://img.shields.io/badge/Indices-hkl%20%7C%20hkil-47694b)](#晶面与坐标系)
-[![版本](https://img.shields.io/badge/Status-v1.0.1-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
+[![版本](https://img.shields.io/badge/Release-v1.0.1-16a34a)](https://github.com/QiushanHuang/mineral-atlas-workbench/releases/latest)
+[![Development](https://img.shields.io/badge/main-v1.1.0--dev.4-d6a34b)](https://github.com/QiushanHuang/mineral-atlas-workbench/tree/main)
 [![CI](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml/badge.svg)](https://github.com/QiushanHuang/mineral-atlas-workbench/actions/workflows/ci.yml)
 [![许可证](https://img.shields.io/badge/License-MIT-16a34a)](LICENSE)
 
@@ -19,6 +20,30 @@
 它适合这样的场景：报告上写着 `(1 0 −1 0)`，但你还需要知道，**它究竟是哪一张面、与哪些面共棱，以及这个标记如何对应原图**。
 
 浏览器界面、命令行和 agent 插件共用同一计算核心。参数和证据随结果保存，其他人可以复现计算，而不必从一段对话中重新拼出整个工作流。
+
+已把本地与在线判读经验接入证据流程和可复制提示词。[经验总结与验证边界](docs/photo-analysis-lessons.md)。
+
+## v1.1.0-dev.4 · 四个工作区（`main` 开发版）
+
+使用下方源码克隆方式启动工作台，进入 **轻松建模**，或打开本机地址下的 `/editor.html`。这些功能位于 `main` 开发版；最新正式标签及其下载包仍为 **v1.0.1**，旧下载包不包含新版编辑器。
+
+模型编辑、照片修正、晶轴参数和保存复核分为四个工作区；照片使用大画布、紧凑工具条和右侧检查面板，窄屏时面板可折叠。切换保留编辑状态和未完成点，顶部按当前工作区保存模型或标注，文件链接集中在“保存与复核”。本轮不改变识别算法，公共 MCP 工具仍为14个。配套技能版本为 **2.1.0-dev.4**。[工作区指南](docs/layout-guide.md#中文) · [照片纠错](docs/photo-correction-guide.md#中文) · [拾取与教学](docs/beginner-ux-guide.md#中文)。
+
+从七种预设或已有项目开始，在固定正面、侧面、顶面中推拉面、联动模块、截角和撤销。手动定义参考轴可保持外形，也可显式按原指数重建。参数页给出面积、体积、角度、指数候选、当前参考方向中的相容几何群及晶带候选。
+
+照片可重新画棱、圈面、拖动节点和重新分类；更换模型后逐条重新确认面关联。项目、纠错和复核文件保存到启动时 `--out` 指定的本机目录，界面显示带内容指纹的文件名、路径和下载链接，可复制给别人，不覆盖已有不同内容。模型可导出离线 ZIP；复核回复在本地导入，不自动联网或上传原图。
+
+[手动建模指南](docs/manual-modeling-guide.md#中文) · [识别实测与限制](docs/recognition-improvements-2026-10-02.md)
+
+![照片修正工作区：大画布、就近绘图工具与右侧检查面板](assets/editor-photo-workspace.png)
+
+图中使用已公开的451教学示例。橙色／绿色标注与紫色拟合模型分开显示；叠加用于核对，不是独立精度证明。
+
+当前支持正面距的凸体编辑，不支持非凸自由雕刻或任意照片的唯一重建。旧 68 张开发照片的最终自动排序与基线一致；存在回退的图像精修保留为待审查建议。真实云端视觉精度尚未实测。
+
+## 照片生成初始模型
+
+可直接输入1–24张照片，自动提取轮廓并生成多个3D形态候选，再载入工作台核对和精修。[模糊形态、残缺视角与68张照片验证](docs/photo-evidence-series.md)。候选来自显式形态库先验，尚不支持任意新物体的唯一3D重建。
 
 ## v1.0.1 · 611 下端外形修正
 
@@ -77,7 +102,7 @@ python3 scripts/build_photo_example.py --out atlas-runs/451-photo-study
 - 可选确定性粗到细相机配准、稳健损失、竞争解和独立留出误差
 - **对称型、晶系、结晶轴选择、晶体几何常数特征、晶面符号**五项报告
 - 内容寻址输出、文件校验、原始输入留存与已验证缓存
-- 7个本地MCP工具及可独立使用的`mineral-face-atlas` skill
+- 开发版14个本地MCP工具，包含当前模型照片对齐、编辑、照片纠错和结构化复核，以及可独立使用的`mineral-face-atlas` skill
 
 ## v1.0.0 更新重点
 
@@ -141,11 +166,21 @@ py -3.13 -m venv .venv
 .venv\Scripts\python.exe atlas_cli.py serve --open
 ```
 
-NumPy、SciPy用于配准，Pillow用于图像元数据检查。Tesseract和Ollama是另外安装的可选工具。使用准备实际运行的Python执行`atlas_cli.py doctor`，即可检查当前能力。
+NumPy、SciPy用于配准，Pillow用于图像元数据检查。自动轮廓、照片候选和颜色／梯度面区识别需要在同一虚拟环境安装 `requirements-photo.lock`，其中还包含OpenCV；手动建模和画线修面不依赖这些可选库。Tesseract和Ollama是另外安装的可选工具。使用准备实际运行的Python执行`atlas_cli.py doctor`，即可检查当前能力。
 
 ## 快速开始
 
-### 浏览器操作
+### 新版编辑器
+
+1. 进入 **轻松建模 → 模型编辑**，选择预设或载入项目，用固定视图选面、推拉并撤销核对。
+2. 切换到 **照片修正**，先试合成图或公开实物示例，再画线、圈面。**自动拾取**可以关闭，按住 Shift 可临时关闭。
+3. 使用 **修正** 拖动节点、线或整个面区；**识别面**先给出边界候选，确认采用后继续修边。
+4. 在 **晶轴与参数** 定义参考轴、查看几何量。点选模型顶点后会返回表单，确认并应用才生效。
+5. 在 **保存与复核** 分别保存模型项目和照片标注，或导出离线模型与报告。
+
+切换工作区保留未完成点，但不代表已写入文件；保存标注前先完成或取消绘制。[完整工作区指南](docs/layout-guide.md#中文)。
+
+### 经典工作台
 
 1. 选择参考案例，或导入项目JSON。
 2. 核对晶系、基底、指数与支持距离。
@@ -192,7 +227,7 @@ python3 scripts/print_mcp_config.py --codex-command
 
 其他MCP客户端可运行`python3 scripts/print_mcp_config.py`获取JSON配置。脚本只打印，不修改客户端设置。服务器使用stdio，兼容MCP 2025-06-18协议。
 
-工具包括：`atlas_build`、`atlas_validate`、`atlas_fit`、`atlas_doctor`、`atlas_inspect_image`、`atlas_ocr`、`atlas_vision`。
+`main` 开发版共有14个工具：`atlas_editor`、`atlas_editor_export`、`atlas_review_export`、`atlas_review_check`、`atlas_photo_annotations`、`atlas_photo_align`、`atlas_from_photos`、`atlas_build`、`atlas_validate`、`atlas_fit`、`atlas_doctor`、`atlas_inspect_image`、`atlas_ocr`、`atlas_vision`。[编辑器请求](docs/manual-modeling-guide.md#api) · [照片对齐请求](docs/photo-correction-guide.md#api)。点选面区仍使用私有 HTTP 接口，不增加公共工具。
 
 ### 独立 Skill
 
@@ -251,6 +286,8 @@ python scripts/prepare_offline.py --install --wheelhouse wheelhouse
 ## 架构说明
 
 - `atlas/core.py`：指数、对称操作、半空间几何与检查
+- `atlas/editor.py` / `atlas/editor_export.py`：草稿编辑、参考轴、参数解析与离线修订
+- `atlas/review.py` / `atlas/photo_annotations.py`：本地复核协议与原图绑定的纠错标注
 - `atlas/fit.py`：可选相机配准与独立误差报告
 - `atlas/project.py`：版本化输出、报告与已验证缓存
 - `atlas/images.py`：可选本机图像接口

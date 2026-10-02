@@ -6,12 +6,12 @@ def payload(destination):
  runtime=destination/'assets/runtime';runtime.mkdir(parents=True,exist_ok=True)
  for name in ['atlas','templates','ui','examples','schema','tests','docs','assets']:shutil.copytree(ROOT/name,runtime/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc','WORK.md'))
  (runtime/'scripts').mkdir(exist_ok=True)
- for name in ['prepare_offline.py','print_mcp_config.py','run_js_checks.py','build_photo_example.py']:shutil.copy2(ROOT/'scripts'/name,runtime/'scripts'/name)
+ for name in ['prepare_offline.py','print_mcp_config.py','run_js_checks.py','build_photo_example.py','benchmark_photo_candidates.py','validate_photo_candidates.py','benchmark_evidence_series.py','validate_photo_evidence.py']:shutil.copy2(ROOT/'scripts'/name,runtime/'scripts'/name)
  evidence=ROOT/'verification' if (ROOT/'verification').exists() else ROOT/'evaluation'
  (runtime/'verification').mkdir(exist_ok=True)
- for name in ['benchmark.json','fit-benchmark.json','skill-scenarios.json']:
+ for name in ['benchmark.json','fit-benchmark.json','skill-scenarios.json','photo-candidates.json','photo-evidence-series.json','online-analysis-workflow.json']:
   if (evidence/name).exists():shutil.copy2(evidence/name,runtime/'verification'/name)
- for name in ['atlas_cli.py','requirements-fit.lock','README.md','README.zh-CN.md','LICENSE','AUTHORS.md']:shutil.copy2(ROOT/name,runtime/name)
+ for name in ['atlas_cli.py','requirements-fit.lock','requirements-photo.lock','README.md','README.zh-CN.md','LICENSE','AUTHORS.md']:shutil.copy2(ROOT/name,runtime/name)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--dest',type=pathlib.Path,default=pathlib.Path.home()/'.codex/skills/mineral-face-atlas');p.add_argument('--stage-only',action='store_true',help='Build portable standalone-skill payload without replacing an installed skill');a=p.parse_args()
  if a.stage_only:

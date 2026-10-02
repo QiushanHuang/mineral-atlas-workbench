@@ -11,6 +11,17 @@ class Images(unittest.TestCase):
   response=mock.MagicMock();response.__enter__.return_value.read.return_value=json.dumps({'message':{'content':'{"observations":["synthetic"]}'}}).encode();opener=mock.Mock();opener.open.return_value=response
   with mock.patch('atlas.images.urllib.request.build_opener',return_value=opener):
    result=vision(self.image(),'local-test-fixture');self.assertEqual(result['claim_level'],'unverified_visual_suggestion');req=opener.open.call_args.args[0];self.assertEqual(req.full_url,'http://127.0.0.1:11434/api/chat')
+ def test_visual_policy_is_sent_and_fingerprinted(self):
+  import hashlib
+  response=mock.MagicMock();response.__enter__.return_value.read.return_value=json.dumps({'message':{'content':'{}'}}).encode();opener=mock.Mock();opener.open.return_value=response
+  with mock.patch('atlas.images.urllib.request.build_opener',return_value=opener):
+   result=vision(self.image(),'local-test-fixture')
+  self.assertIn('policy_sha256',result)
+  prompt=(ROOT/'atlas/visual-analysis-prompt.txt').read_text(encoding='utf-8')
+  body=json.loads(opener.open.call_args.args[0].data)
+  self.assertEqual(body['messages'][0]['content'],prompt)
+  self.assertEqual(result['policy_sha256'],hashlib.sha256(prompt.encode()).hexdigest())
+  self.assertEqual(opener.open.call_args.args[0].full_url,'http://127.0.0.1:11434/api/chat')
  def test_invalid_image(self):
   for x in ['data:image/svg+xml;base64,PHN2Zz4=','notbase64!',base64.b64encode(b'<html>').decode()]:
    with self.assertRaises(ValueError):decode_image(x)

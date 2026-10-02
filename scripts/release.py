@@ -1,16 +1,19 @@
 """Produce portable software/plugin and standalone-skill ZIPs from an explicit allowlist."""
 import pathlib,shutil,sys,tempfile,zipfile,json,hashlib,os,argparse
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/'scripts'));from install_skill import payload
+sys.path.insert(0,str(ROOT/'scripts'));sys.path.insert(0,str(ROOT))
+from install_skill import payload
+from atlas import __version__ as VERSION
+SKILL_VERSION='2.1.0-dev.4'
 DIRS=['atlas','templates','ui','examples','schema','tests','scripts','skills','docs','assets','.github','.codex-plugin']
-FILES=['atlas_cli.py','mcp_launcher.py','plugin.json','mcp.json','.mcp.json','README.md','requirements-fit.lock','start.sh','启动工作台.command','启动工作台.bat','查看预置图谱.html','README.zh-CN.md','LICENSE','AUTHORS.md','CONTRIBUTING.md','SECURITY.md','CITATION.cff','CHANGELOG.md','.gitignore','.gitattributes']
+FILES=['atlas_cli.py','mcp_launcher.py','plugin.json','mcp.json','.mcp.json','README.md','requirements-fit.lock','requirements-photo.lock','start.sh','启动工作台.command','启动工作台.bat','查看预置图谱.html','README.zh-CN.md','LICENSE','AUTHORS.md','CONTRIBUTING.md','SECURITY.md','CITATION.cff','CHANGELOG.md','.gitignore','.gitattributes']
 def copy_release(dest):
  dest.mkdir(parents=True,exist_ok=True)
  for name in DIRS:shutil.copytree(ROOT/name,dest/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.pyc','WORK.md'))
  for name in FILES:shutil.copy2(ROOT/name,dest/name)
  (dest/'verification').mkdir(exist_ok=True)
  evidence=ROOT/'verification' if (ROOT/'verification').exists() else ROOT/'evaluation'
- for name in ['benchmark.json','fit-benchmark.json','skill-scenarios.json']:shutil.copy2(evidence/name,dest/'verification'/name)
+ for name in ['benchmark.json','fit-benchmark.json','skill-scenarios.json','photo-candidates.json','photo-evidence-series.json','online-analysis-workflow.json']:shutil.copy2(evidence/name,dest/'verification'/name)
  manifests={str(p.relative_to(dest)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(dest.rglob('*')) if p.is_file() and p.name!='SHA256.json'}
  (dest/'SHA256.json').write_text(json.dumps(manifests,indent=2), encoding="utf-8")
  return dest
@@ -34,6 +37,6 @@ if __name__=='__main__':
      data=f.read_bytes()
      for pattern in [(str(pathlib.Path.home())+'/').encode(),b'com.tencent.'+b'xinWeChat',b'evaluation/'+b'ui-runs']:
       if pattern in data:raise ValueError('分享包出现私人路径：'+str(f.relative_to(tree)))
-  receipts=[zip_tree(stage,a.out/'mineral-atlas-workbench-1.0.1.zip'),zip_tree(standalone,a.out/'mineral-face-atlas-skill-2.0.1.zip')]
+  receipts=[zip_tree(stage,a.out/f'mineral-atlas-workbench-{VERSION}.zip'),zip_tree(standalone,a.out/f'mineral-face-atlas-skill-{SKILL_VERSION}.zip')]
   if a.copy_plugin:copy_release(a.copy_plugin.expanduser().resolve())
  (a.out/'release-checksums.json').write_text(json.dumps(receipts,indent=2), encoding="utf-8");print(json.dumps(receipts,indent=2))
